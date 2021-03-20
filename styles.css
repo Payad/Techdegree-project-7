@@ -18,11 +18,13 @@ header {
 .header-right {
   display: flex;
   align-items: center;
-  margin-right: 80px;
+  /* margin-right: 80px; */
+  margin-right: 150px;
 }
 
 .header-right {
   margin-left: 10px;
+  margin-right: auto;
 }
 
 .bell-icon {
@@ -86,8 +88,8 @@ h3.profile-name {
 .nav {
   display: flex;
   justify-content: center;
-  width: 100%;
-  margin-right: 60px;
+  /* width: 100%; */
+  margin-right: 17%;
   padding-top: 12px;
   /* background-color: indigo; */
   background-color: rgb(72, 61, 139);
@@ -106,12 +108,12 @@ h3.profile-name {
   height: 24px; 
 }
 
-.icons-1,
+/* .icons-1,
 .icons-2,
 .icons-3,
 .icons-4 {
   margin-right: 15px;
-}
+} */
 
 .twitter,
 .facebook,
@@ -154,13 +156,24 @@ ul.traffic-nav-button {
   list-style-type: none;
 }
 
+li.traffic-nav-link {
+  font-size: 12px;
+}
+
 /* for styling buttons */
 button {
   border-radius: 20%;
   padding:1px;
   margin-right:3px;
+  border: none;
   /* background-color: green;
   color: white; */
+}
+
+button.hourly {
+  color: white;
+  background-color: lightgreen;
+  border-radius: 5px;
 }
 
 .twitter-container {
@@ -264,18 +277,21 @@ img.profile-image-2 {
   width: 40px;
   border-radius: 50%;
   margin-left: 90px;
+  margin-top: 20px;
 }
 
 img.profile-image-3 {
   width: 40px;
   border-radius: 50%;
   margin-left: 90px;
+  margin-top: 20px;
 } 
 
  img.profile-image-4 {
   width: 40px;
   border-radius: 50%;
   margin-left: 90px;
+  margin-top: 20px;
 }
 
 p.memberName-1 {
@@ -317,30 +333,142 @@ a.email-4 {
 
 p.date-1 {
   font-size: 10px;
-  margin-left: 22%;
+  margin-left: 28%;
   margin-top: 5px;
   margin-bottom: 5px;
 }
 
 p.date-2 {
   font-size: 10px;
-  margin-left: 22%;
+  margin-left: 28%;
   margin-top: 5px;
   margin-bottom: 5px;
 }
 
 p.date-3 {
   font-size: 10px;
-  margin-left: 22%;
+  margin-left: 28%;
   margin-top: 5px;
   margin-bottom: 5px;
 }
 
 p.date-4 {
   font-size: 10px;
-  margin-left: 22%;
+  margin-left: 28%;
   margin-top: 5px;
   margin-bottom: 5px;
+}
+
+p.comments {
+  font-size: 12px;
+  text-align: center;
+  margin-right: 40%;
+  /* margin-left: 42px; */
+  margin-left: 20px;
+  /* display: flex;
+  overflow-wrap: break-word; */
+}
+
+p.time {
+  font-size: 10px;
+  margin-left: 27%;
+}
+
+input#userfield {
+  margin-left: 10px;
+  height: 25px;
+  width: 67%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  border: 2px solid lightgrey;
+  background-color: lightblue;
+}
+
+textarea#messageField {
+  margin-left: 10px;
+  width: 67%;
+  height: 100px;
+  border-radius: 5px;
+  border: 2px solid lightgrey;
+  background-color: lightblue;
+}
+
+button#send {
+  margin-left: 10px;
+  width: 67%;
+  height: 30px;
+  margin-top: 5px;
+  border-radius: 5px;
+  color: white;
+  background: rgb(123, 104, 238)
+}
+
+h3.setting {
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.toggle-switch-1 {
+  display: flex;
+}
+
+.toggle-switch-2 {
+  display: flex;
+}
+
+p.notification-1 {
+  font-size: 12px;
+  margin-right: 20px;
+  margin-left: 10px;
+  padding-bottom: 30px;
+  padding-top: 10px;
+}
+
+p.notification-2 {
+  font-size: 12px;
+  margin-right: 35px;
+  margin-left: 10px;
+  padding-bottom: 30px;
+  padding-top: 10px;
+}
+
+label.switch-light.switch-candy {
+  width: 23%;
+}
+
+.break {
+  margin-bottom: 10px;
+}
+
+select#timezone {
+  margin-left: 10px;
+  width: 67%;
+  height: 30px;
+  border-radius: 5px;
+  border: 2px solid lightgrey;
+  background-color: lightblue;
+}
+
+.settings-button {
+  margin-top: 15px;
+  margin-left: 10px;
+}
+
+button#save {
+  width: 32%;
+  height: 30px;
+  margin-right: 11px;
+  border-radius:5px;
+  color: white;
+  background-color: rgb(123, 104, 238);
+}
+
+button#cancel {
+  width: 32%;
+  height: 30px;
+  border-radius: 5px;
+  color: white;
+  background-color: grey;
 }
 
 /* button .traffic-nav-link {
@@ -348,8 +476,76 @@ p.date-4 {
   justify-content: center;
 } */
 
+
+/* grid section */
 .grid-container {
   display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  grid-template-areas: 
+    "header"
+    "navigation"
+    "main";
 }
+
+.header {
+  grid-area: header;
+}
+
+.navigation {
+  grid-area: navigation;
+}
+
+.main {
+  grid-area: main;
+}
+
+.navigation {
+  display: grid;
+}
+
+@media (min-width: 768px) {
+.grid-container {
+  display: grid;
+  grid-template-columns: 55px 1fr;
+  grid-template-areas: 
+      "header header"
+      "navigation main";
+}
+}
+
+.main {
+  display: grid;
+}
+
+@media (min-width: 768px) {
+  .main {
+    grid-template-columns: 50%;
+  }
+  .traffic, .social {
+    grid-column: 1 / span 2;
+  }
+  .daily, .members, .message {
+    grid-column: 1 / span 1;
+  }
+  .mobile, .activity, .settings {
+    grid-column: 2 / span 1;
+  }
+}
+
+.widget-container-full, .widget-container-half {
+    width: 95vw;
+}
+
+@media (min-width: 768px) {
+    .widget-container-full {
+      width: 90vw;
+    }
+    .widget-container-half {
+      width: 45vw;
+    }
+}
+
+
 
 

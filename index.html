@@ -72,7 +72,7 @@
         <div class="traffic-header">
             <h3 class="h3">Traffic</h3> 
         <ul class="traffic-nav-button">
-            <button>
+            <button class="hourly">
                 <li class="traffic-nav-link">Hourly</li>
             </button>
             <button>
@@ -202,6 +202,7 @@
     </div>
         <p class="date-1">10/15/15</p>
     </div>
+    <hr>
 
     <div class="members-2-container">
         <img src="images/member-2.jpg" class="profile-image-2">
@@ -211,6 +212,7 @@
     </div>
         <p class="date-2">10/15/15</p>
     </div>
+    <hr>
 
     <div class="members-3-container">
         <img src="images/member-3.jpg" class="profile-image-3">
@@ -220,6 +222,7 @@
     </div>
         <p class="date-3">10/15/15</p>
     </div>
+    <hr>
 
     <div class="members-4-container">
         <img src="images/member-4.jpg" class="profile-image-4">
@@ -230,41 +233,46 @@
         <p class="date-4">10/15/15</p>
     </div>
 </section>
+<hr>
 
 <section class="recent-activities">
-    <h3 class="h3">Recent Activities</h3>
+    <h3 class="h3">Recent Activity</h3>
     
     <div class="members-1-container">
         <img src="images/member-1.jpg" class="profile-image-1">
     <div class="members-1-comments">
-        <p>Victoria Chambers commented on your WebApp's SEO tips</p>
-        <p>4 hours ago</p>
+        <p class="comments">Victoria Chambers commented on your WebApp's SEO tips</p>
+        <p class="time">4 hours ago</p>
     </div>
     </div>
+    <hr>
 
     <div class="members-2-container">
         <img src="images/member-2.jpg" class="profile-image-2">
     <div class="members-2-comments">
-        <p>Dale Byrd like the post Facebook's Changes for 2016</p>
-        <p>5 hours ago</p>
+        <p class="comments">Dale Byrd like the post Facebook's Changes for 2016</p>
+        <p class="time">5 hours ago</p>
     </div>
-    </div>    
+    </div>
+    <hr>    
 
     <div class="members-3-container">
         <img src="images/member-3.jpg" class="profile-image-3">
     <div class="members-3-comments">
-        <p>Dawn Wood commented on Facebook's Changes for 2016</p>
-        <p>5 hours ago</p>
+        <p class="comments">Dawn Wood commented on Facebook's Changes for 2016</p>
+        <p class="time">5 hours ago</p>
     </div>
     </div>
+    <hr>
 
     <div class="members-4-container">
         <img src="images/member-4.jpg" class="profile-image-4">
     <div class="members-4-comments">
-        <p>Dan Oliver posted WebApp's SEO tips</p>
-        <p>1 day ago</p>
+        <p class="comments">Dan Oliver posted WebApp's SEO tips</p>
+        <p class="time">1 day ago</p>
     </div>
     </div>
+    <hr>
 </section>
 
 
@@ -277,19 +285,22 @@
 <form class="widget-container">
     <input type="text" placeholder="Search for user" class="form-field" id="userfield">
     <textarea placeholder="Message for user" class="form-area" id="messageField"></textarea>
+    <div>
     <button class="button-primary" id="send">Send</button>
+    </div>
 </form>
+<hr class="break">
 </section>
 
     <!-- local setting widget -->
 <section class="settings">
-    <h3>Settings</h3>
+    <h3 class="setting">Settings</h3>
 
     <!-- custom toggle code from external resources will go here -->
     <!-- courtesy of https://ghinda.net/css-toggle-switch/index.html -->
 
     <div class="toggle-switch-1">
-        <p>Send Email Notifications</p>
+        <p class="notification-1">Send Email Notifications</p>
     <!-- toggle switch goes here -->
         <label class="switch-light switch-candy" onclick="">
         <input type="checkbox">
@@ -302,7 +313,7 @@
     </div>
 
     <div class="toggle-switch-2">
-        <p>Send Profile to Public</p>
+        <p class="notification-2">Send Profile to Public</p>
     <!-- toggle switch goes here -->
         <label class="switch-light switch-candy" onclick="">
         <input type="checkbox">
