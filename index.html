@@ -26,14 +26,15 @@
         <!-- bell-icon notification's goes here -->
      </div>
     </div>
+    <div class="vertical-line"></div>
     <!-- </div> -->
         <img class="profile-picture" src="images/AvatarFace.jpg" alt="Peter's profile picture">
         <h3 class="profile-name">Peter Ayad</h3>
     </div>
   </header>
 <!-- set up notification sidebar for svg icons -->
-<div> 
-<nav class="nav">
+<div class="nav"> 
+<nav>
     <ul>
     <li class="icons-1"><a href="#" class="svg-dashboard">
         <img class="img-1" src="icons/icon-dashboard.svg" alt="dashboard button">
@@ -57,9 +58,11 @@
     <div class="main-header">
         <h2 class="headline">Dashboard</h2>
     </div>
-    <div class="main-header-search">
-        <input type="search" placeholder="Search..." />
-    </div>
+    <div class="tab"></div>
+    <!-- <div class="main-header-search"> -->
+        <!-- not sure if supposed to use search input field? -->
+        <!-- <input type="search" placeholder="Search..." /> -->
+    <!-- </div> -->
   </div>
 
     <!-- alert banner -->
@@ -70,18 +73,18 @@
     <!-- line graphs -->
      <section class="traffic">
         <div class="traffic-header">
-            <h3 class="h3">Traffic</h3> 
+            <h3 class="h3">TRAFFIC</h3> 
         <ul class="traffic-nav-button">
             <button class="hourly">
                 <li class="traffic-nav-link">Hourly</li>
             </button>
-            <button>
+            <button class="daily">
                 <li class="traffic-nav-link">Daily</li>
             </button>
-            <button>
+            <button class="weekly">
                 <li class="traffic-nav-link active">Weekly</li>
             </button>
-            <button>
+            <button class="monthly">
                 <li class="traffic-nav-link">Monthly</li>
             </button>
         </ul>
@@ -93,8 +96,9 @@
     </section>
 
     <!-- bar graphs -->
+    <div class="dailyMobile-flex">
     <section class="daily">
-      <h3 class="h3">Daily Traffic</h3>
+      <h3 class="h3">DAILY TRAFFIC</h3>
       <div class="widget-container-half">
         <!-- element bar graph will attach to -->
         <canvas id="daily-chart"></canvas>
@@ -102,17 +106,21 @@
     </section>
     
     <section class="mobile">
-      <h3 class="h3">Mobile Users</h3>
+      <h3 class="h3">MOBILE USERS</h3>
       <div>
         <!-- element pie graph will attach to -->
         <canvas id="mobile-chart"></canvas>
       </div>
     </section>
+    </div>
 
 <!-- social status section -->
 
 <!-- social-container -->
+<h3 class="h3">SOCIAL STATS</h3>
+<div class="social-container">
 <div class="twitter-container">
+   
     <div class="twitter-image">
     <!-- svg social img goes here -->
     <?xml version="1.0" encoding="utf-8"?>
@@ -126,8 +134,10 @@
 	c-1.1,0-2.1-0.3-3-0.8c0,0,0,0.1,0,0.1c0,3.2,2.3,5.8,5.3,6.4c-0.6,0.1-1.1,0.2-1.7,0.2c-0.4,0-0.8,0-1.2-0.1
 	c0.8,2.6,3.3,4.5,6.1,4.6c-2.2,1.8-5.1,2.8-8.2,2.8c-0.5,0-1.1,0-1.6-0.1c2.9,1.9,6.4,3,10.1,3c12.1,0,18.7-10,18.7-18.7
 	c0-0.3,0-0.6,0-0.8C30,5.6,31.1,4.4,32,3.1z"/>
+    <circle cx="0px" cy="0px" r="40" stroke="black" stroke-width="2" fill="transparent"/>
     </g>
     </svg>
+    <!-- <circle cx="0px" cy="0px" r="40" stroke="black" stroke-width="3" fill="blue"/> -->
     </div>
     <div class="twitter-text">
         <p class="Ttag">Twitter</p>
@@ -188,11 +198,12 @@
         <p>2,530</p>
     </div>
 </div>
+</div>
  <hr>
     <!-- New Member's widget -->
 
 <section class="members">
-    <h3 class="h3">New Members</h3>
+    <h3 class="h3">NEW MEMBERS</h3>
 
     <div class="members-1-container">
         <img src="images/member-1.jpg" class="profile-image-1">
@@ -200,7 +211,7 @@
         <p class="memberName-1">Victoria Chambers</p>
         <a href="#">victoria.chambers80@example.com</a>
     </div>
-        <p class="date-1">10/15/15</p>
+        <p class="date-1">10/15/21</p>
     </div>
     <hr>
 
@@ -210,7 +221,7 @@
         <p class="memberName-2">Dale Byrd</p>
         <a class="email-2" href="#">dale.byrd52@example.com</a>
     </div>
-        <p class="date-2">10/15/15</p>
+        <p class="date-2">10/15/21</p>
     </div>
     <hr>
 
@@ -220,7 +231,7 @@
         <p class="memberName-3">Dawn Wood</p>
         <a class="email-3" href="#">dawn.wood16@example.com</a>
     </div>
-        <p class="date-3">10/15/15</p>
+        <p class="date-3">10/15/21</p>
     </div>
     <hr>
 
@@ -230,19 +241,22 @@
         <p class="memberName-4">Dan Oliver</p>
         <a class="email-4" href="#">dan.oliver82@example.com</a>
     </div>
-        <p class="date-4">10/15/15</p>
+        <p class="date-4">10/15/21</p>
     </div>
 </section>
 <hr>
 
 <section class="recent-activities">
-    <h3 class="h3">Recent Activity</h3>
+    <h3 class="h3">RECENT ACTIVITY</h3>
     
     <div class="members-1-container">
         <img src="images/member-1.jpg" class="profile-image-1">
     <div class="members-1-comments">
-        <p class="comments">Victoria Chambers commented on your WebApp's SEO tips</p>
+        <div class="comment-arrow-1">
+        <p class="comments-1">Victoria Chambers commented on your <strong>WebApp's SEO tips</strong></p>
         <p class="time">4 hours ago</p>
+        </div>
+        <div class="arrow-1"><strong>></strong></div>
     </div>
     </div>
     <hr>
@@ -250,8 +264,11 @@
     <div class="members-2-container">
         <img src="images/member-2.jpg" class="profile-image-2">
     <div class="members-2-comments">
-        <p class="comments">Dale Byrd like the post Facebook's Changes for 2016</p>
+        <div class="comment-arrow-2">
+        <p class="comments-2">Dale Byrd like the post <strong>Facebook's Changes for 2021</strong></p>
         <p class="time">5 hours ago</p>
+        </div>
+        <div class="arrow-2"><strong>></strong></div>
     </div>
     </div>
     <hr>    
@@ -259,8 +276,11 @@
     <div class="members-3-container">
         <img src="images/member-3.jpg" class="profile-image-3">
     <div class="members-3-comments">
-        <p class="comments">Dawn Wood commented on Facebook's Changes for 2016</p>
+        <div class="comment-arrow-3">
+        <p class="comments-3">Dawn Wood commented on <strong>Facebook's Changes for 2021</strong></p>
         <p class="time">5 hours ago</p>
+        </div>
+        <div class="arrow-3"><strong>></strong></div>
     </div>
     </div>
     <hr>
@@ -268,8 +288,11 @@
     <div class="members-4-container">
         <img src="images/member-4.jpg" class="profile-image-4">
     <div class="members-4-comments">
-        <p class="comments">Dan Oliver posted WebApp's SEO tips</p>
-        <p class="time">1 day ago</p>
+        <div class="comment-arrow-4">
+        <p class="comments-4">Dan Oliver posted <strong>WebApp's SEO tips</strong></p>
+        <p class="time-4">1 day ago</p>
+        </div>
+        <div class="arrow-4"><strong>></strong></div>
     </div>
     </div>
     <hr>
@@ -280,7 +303,7 @@
 
     <!-- Messaging widget -->
 <section class="message">
-    <h3 class="h3">Message User</h3>
+    <h3 class="h3">MESSAGE USER</h3>
 
 <form class="widget-container">
     <input type="text" placeholder="Search for user" class="form-field" id="userfield">
@@ -294,7 +317,7 @@
 
     <!-- local setting widget -->
 <section class="settings">
-    <h3 class="setting">Settings</h3>
+    <h3 class="setting">SETTINGS</h3>
 
     <!-- custom toggle code from external resources will go here -->
     <!-- courtesy of https://ghinda.net/css-toggle-switch/index.html -->
@@ -340,7 +363,7 @@
         </div> -->
 
 <select class="form-field" id="timezone">
-    <option disabled selected>Select a Timezone</option>
+    <option disabled selected>Select Timezone</option>
     <option>Eastern Standard Time (EST)</option>
     <option>Pacific Standard Time (PST)</option>
     <option>Central Standard Time (CST)</option>
@@ -361,6 +384,6 @@
 
         </main>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
-   
+        <script src="js/webApp.js"></script>
     </body>
 </html>
