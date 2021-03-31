@@ -1,6 +1,8 @@
 const user = document.getElementById("userField");
 const message = document.getElementById("messageField");
 const send = document.getElementById("send");
+const save = document.getElementById("button #save");
+const cancel = document.getElementById("button #cancel");
 
 
 
@@ -12,14 +14,14 @@ alertBanner.innerHTML =
  <p class="alert-banner-close">x</p>
  </div>`
 
- alertBanner.affEventLister('click', (e) => {
+ alertBanner.addEventListener('click', (e) => {
      const element = e.target;
      if (element.classlist.contains("alert-banner-close")) {
          alert.style.display = "none"
      }
  });
 
- const trafficCanvas = document.getElementById(traffic-chart);
+ const trafficCanvas = document.getElementById("traffic-chart");
 
  let trafficData = {
      labels: ["16-22", "23-29", "30-5", "6-12", "13-19", "20-26", "27-3", 
@@ -116,6 +118,7 @@ alertBanner.innerHTML =
       options: mobileOptions
   });
 
+  // Send Button
   send.addEventListener('click', () => {
       if(user.value === "" && message.value === "") {
           alert("Please fill out user and message fields before sending");
@@ -127,3 +130,16 @@ alertBanner.innerHTML =
           alert(`Message successfully sent to: ${user.value}`);  
       }
   });
+
+  // Save button
+  save.addEventListener('click', () => {
+
+  });
+
+
+
+  // Cancel Button
+  cancel.addEventListener('click', () => {
+
+  });
+
