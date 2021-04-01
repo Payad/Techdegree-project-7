@@ -249,14 +249,14 @@ button.hourly {
   color: white;
   background-color: lightgreen;
   border-radius: 10px;
-  margin-right: 10px;
+  margin-right: 15px;
   padding: 5px;
 }
 
 button.daily,
 button.weekly,
 button.monthly {
-  margin-right: 10px;
+  margin-right: 15px;
   border-radius: 10px;
   padding: 5px;
   width: 50px;
@@ -271,7 +271,7 @@ hr.social-stats {
 .twitter-container {
   display: flex;
   border-radius: 5px;
-  width: 90%;
+  width: 95%;
   height: 3%;
   padding-top: 10px;
   padding-left: 15px;
@@ -299,7 +299,7 @@ p.Ttag {
 .facebook-container {
  display: flex;
  border-radius: 5px;
- width: 90%;
+ width: 95%;
  height: 3%;
  padding-top: 10px;
  margin-left: 10px;
@@ -327,7 +327,7 @@ p.Ftag {
 .google-container {
   display: flex;
   border-radius: 5px;
-  width: 90%;
+  width: 95%;
   height: 3%;
   padding-top: 10px;
   margin-left: 10px;
@@ -511,7 +511,7 @@ hr.recent-activity {
 input#userfield {
   margin-left: 10px;
   height: 25px;
-  width: 90%;
+  width: 95%;
   border-radius: 5px;
   margin-bottom: 10px;
   border: 2px solid lightgrey;
@@ -521,7 +521,7 @@ input#userfield {
 
 textarea#messageField {
   margin-left: 10px;
-  width: 90%;
+  width: 95%;
   height: 100px;
   border-radius: 5px;
   border: 2px solid lightgrey;
@@ -531,7 +531,7 @@ textarea#messageField {
 
 button#send {
   margin-left: 10px;
-  width: 90%;
+  width: 95%;
   height: 30px;
   margin-top: 5px;
   border-radius: 5px;
@@ -580,7 +580,7 @@ label.switch-light.switch-candy {
 
 select#timezone {
   margin-left: 10px;
-  width: 90%;
+  width: 95%;
   height: 30px;
   border-radius: 5px;
   border: 2px solid lightgrey;
@@ -594,16 +594,16 @@ select#timezone {
 }
 
 button#save {
-  width: 44%;
+  width: 46%;
   height: 30px;
-  margin-right: 11px;
+  margin-right: 12px;
   border-radius:5px;
   color: white;
   background-color: rgb(123, 104, 238);
 }
 
 button#cancel {
-  width: 44%;
+  width: 46%;
   height: 30px;
   border-radius: 5px;
   color: white;
@@ -773,23 +773,24 @@ main {
 
  .social-container {
    display: flex;
-   width: 95%;
+   /* width: 95%; */
+   width: 100%;
   
  }
 
  .twitter-container {
-   width: 80%;
+   width: 100%;
    margin-right: 2px;
    margin-left: 20px;
  }
 
  .facebook-container {
-   width: 80%;
+   width: 100%;
    margin-right: 2px;
  }
 
  .google-container {
-   width: 80%;
+   width: 100%;
    margin-right: 2px;
    margin-right: 20px;
  }
