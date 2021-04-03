@@ -221,12 +221,16 @@
 </div>
 </div>
  <hr class="social-stats">
+
     <!-- New Member's widget -->
 
-<section class="members">
+    <!-- <div class="members-recent-flex">
+        <div class="widget-container-full"> -->
+        <div class="widget-half">
+    <section class="members">
     <h3 class="h3">NEW MEMBERS</h3>
-
-    <div class="members-1-container">
+    <div class="widget-half-1024px">
+    <div id="members1Id" class="members-1-container">
         <img src="images/member-1.jpg" class="profile-image-1">
     <div class="members-text">
         <p class="memberName-1">Victoria Chambers</p>
@@ -236,7 +240,7 @@
     </div>
     <hr class="members">
 
-    <div class="members-2-container">
+    <div id="members2Id" class="members-2-container">
         <img src="images/member-2.jpg" class="profile-image-2">
     <div class="members-text">
         <p class="memberName-2">Dale Byrd</p>
@@ -267,10 +271,11 @@
 </section>
 <hr class="members">
 
+
 <section class="recent-activities">
-    <h3 class="h3">RECENT ACTIVITY</h3>
-    
-    <div class="members-1-container">
+    <h3 id="recent-title" class="h3">RECENT ACTIVITY</h3>
+    <div class="widget-half-1024px">
+    <div id="recents1Id" class="members-1-container">
         <img src="images/member-1.jpg" class="profile-image-1">
     <div class="members-1-comments">
         <div class="comment-arrow-1">
@@ -282,7 +287,7 @@
     </div>
     <hr class="recent-activity">
 
-    <div class="members-2-container">
+    <div class="members-2-container" id="members2Id">
         <img src="images/member-2.jpg" class="profile-image-2">
     <div class="members-2-comments">
         <div class="comment-arrow-2">
@@ -294,7 +299,7 @@
     </div>
     <hr class="recent-activity">    
 
-    <div class="members-3-container">
+    <div class="members-3-container" id="members3Id">
         <img src="images/member-3.jpg" class="profile-image-3">
     <div class="members-3-comments">
         <div class="comment-arrow-3">
@@ -306,7 +311,7 @@
     </div>
     <hr class="recent-activity">
 
-    <div class="members-4-container">
+    <div class="members-4-container" id="members4Id">
         <img src="images/member-4.jpg" class="profile-image-4">
     <div class="members-4-comments">
         <div class="comment-arrow-4">
@@ -316,16 +321,21 @@
         <div class="arrow-4"><strong>></strong></div>
     </div>
     </div>
-    <hr class="recent-activity">
+    <hr id="recentAct-hr" class="recent-activity">
 </section>
+</div>
+</div>
+</div>
+<hr class="members-hr-1024px">
 
 
 
 
     <!-- Messaging widget -->
+    <div class="message-settings-flex">
 <section class="message">
     <h3 class="h3">MESSAGE USER</h3>
-
+    <!-- <div class="widget-half"> -->
 <form class="widget-container">
     <input type="text" placeholder="Search for user" class="form-field" id="userfield">
     <textarea placeholder="Message for user" class="form-area" id="messageField"></textarea>
@@ -335,11 +345,14 @@
 </form>
 <hr class="break">
 </section>
+<!-- </div> -->
+<hr class="messageSettings-hr-1024px">
 
     <!-- local setting widget -->
+    <div class="settings">
 <section class="settings">
     <h3 class="setting">SETTINGS</h3>
-
+    <!-- <div class="widget-container-half"> -->
     <!-- custom toggle code from external resources will go here -->
     <!-- courtesy of https://ghinda.net/css-toggle-switch/index.html -->
 
@@ -369,6 +382,7 @@
         </label>
     </div>
 
+
         <!-- <div class="toggle-switch">
         <input id="hour" name="hourly" type="radio" checked>
         <label for="hour" onclick="">Hourly</label>
@@ -397,6 +411,8 @@
     </div>
 
 </section>
+</div>
+</div>
                 
 
                 

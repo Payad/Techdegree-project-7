@@ -507,6 +507,13 @@ hr.members {
 hr.recent-activity {
   margin-top: 10px;
 }
+.members-hr-1024px {
+  visibility: hidden;
+}
+
+.messageSettings-hr-1024px {
+  visibility: hidden;
+}
 
 input#userfield {
   margin-left: 10px;
@@ -972,7 +979,13 @@ div.comment-arrow-4 {
 /* div.arrow-1 {
   margin-right: 50%;
 } */
+.members-hr-1024px {
+  visibility: hidden;
+}
 
+.messageSettings-hr-1024px {
+  visibility : hidden;
+}
 
 input#userfield {
   width: 95%;
@@ -1070,28 +1083,34 @@ main {
     }
 }
 
-/* Media query 1024px */
+/* Media query 1024px */ /* Media query 1024px */ /* Media query 1024px */
+
+.main {
+  display: grid;
+}
 
 @media (min-width: 1024px) {
-  .widget-container-full {
+  .main {
+    grid-template-columns: 1fr;
+   }
+
+  /* .widget-container-full {
     width: 90vw;
-  }
+    display: flex;
+  } */
   .widget-container-half {
     width: 45vw;
   }
   .traffic, .social {
     grid-column: 1 / span 2;
   }
-  /* #daily-chart,
-  #mobile-chart {
-    grid-column: 2 / span 1;
-  } */
 
   section.daily {
     width: 45vw;
   }
   .daily, .members, .message {
     grid-column: 1 / span 1;
+    margin-top: 3px;
   }
   .mobile, .recent-activities, .settings {
     grid-column: 2 / span 1;
@@ -1120,9 +1139,173 @@ main {
   "header header"
   "nav main";
   }
+
+  .main-header {
+    margin-right: 800px;
+  }
+
   .header-right {
     margin-left: 72%;
   }
+  p.alert-banner-close {
+    margin-left: 620px;
+  }
+
+  .widget-half {
+    display: flex;
+  }
+
+  .widget-half-1024px {
+    width: 46vw;
+  }
+
+  hr.between-charts {
+    margin-left: 10px;
+  }
+
+  /* .members-recent-flex {
+    display: flex;
+  } */
+
+section.recent-activities {
+  /* margin-top: 7px; */
+}
+
+.members-1-container {
+  margin-bottom: 16px;
+}
+
+.members-2-container {
+  margin-bottom: 19px;
+}
+
+.members-3-container {
+  margin-bottom: 20px;
+}
+.members-4-container {
+  margin-bottom: 15px;
+}
+
+hr.members {
+  /* margin-right: 10px; */
+  margin-top: 0px;
+}
+
+hr.recent-activity {
+  /* width: 120% */
+  /* margin-top: 11px; */
+}
+div#members2Id {
+  height: 65px;
+}
+hr#recentAct-hr {
+  visibility: hidden;
+}
+.members-hr-1024px {
+  visibility: visible;
+}
+
+/* #members1Id {
+  margin-bottom: 5px;
+} */
+
+
+
+  p.date-1,
+  p.date-2,
+  p.date-3,
+  p.date-4 {
+    margin-left: 0px;
+  }
+
+  p.date-1 {
+    margin-left: 35%;
+  }
+
+  p.date-2 {
+     margin-left: 44%
+  }
+
+  p.date-3 {
+    margin-left: 41.5%
+  }
+  p.date-4 {
+    margin-left: 43.2%;
+  }
+
+  div.arrow-1,
+  div.arrow-2,
+  div.arrow-3,
+  div.arrow-4 {
+    margin-left: 0px;
+  }
+
+  div.arrow-1 {
+    margin-left: 10px;
+  }
+
+  div.arrow-2 {
+    margin-left: 40px;
+  }
+  
+  div.arrow-3 {
+    margin-left: 16px;
+  }
+
+  div.arrow-4 {
+    margin-left: 108px;
+  }
+
+  .message-settings-flex {
+    display: flex;
+  }
+
+  input#userfield {
+    width: 120%;
+  }
+
+  textarea#messageField {
+    width: 120%;
+    height: 102px;
+    margin-bottom: 6px;
+  }
+
+  button#send {
+    width: 120%;
+  }
+
+  hr.break {
+    visibility: hidden;
+  }
+
+  .messageSettings-hr-1024px {
+    visibility: visible;
+    margin-left: 103px;
+  }
+
+  div.settings {
+    /* margin-left: 100px; */
+    margin-top: 15px;
+  }
+
+  label.switch-light.switch-candy {
+    width: 17%;
+  }
+
+  select#timezone {
+    /* width: 170% */
+    /* width: 100%; */
+    width: 96%;
+  }
+
+  button#save {
+    /* width: 10px */
+    width: 210px;
+  }
+
+  button#cancel {
+    width: 210px;
+}
 }
 
 
