@@ -119,16 +119,15 @@ alertBanner.innerHTML =
   });
 
   // Send Button
-  send.addEventListener('click', (e) => {
-        e.preventDefault();
-      if(userfield.value === "" && messageField.value === "") {
+  send.addEventListener('click', () => {
+      if(user.value === "" && message.value === "") {
           alert("Please fill out user and message fields before sending");
-      } else if (userfield.value === "") {
-          alert("Please fill out user field before sending");  
-      } else if (messageField.value === "") {
-          alert("Please fill out message field before sending");   
+      } else if (user.value === "") {
+          alert("Please fill out user filed before sending");  
+      } else if (message.value === "") {
+          alert("Please out message field before sending");   
       } else {
-          alert(`Message successfully sent to: ${userfield.value}`);  
+          alert(`Message successfully sent to: ${user.value}`);  
       }
   });
 
