@@ -119,8 +119,7 @@ alertBanner.innerHTML =
   });
 
   // Send Button
-  send.addEventListener('click', (e) => {
-        e.preventDefault();
+  send.addEventListener('click', () => {
       if(userfield.value === "" && messageField.value === "") {
           alert("Please fill out user and message fields before sending");
       } else if (userfield.value === "") {
@@ -133,14 +132,14 @@ alertBanner.innerHTML =
   });
 
   // Save button
-//   save.addEventListener('click', () => {
+  save.addEventListener('click', () => {
 
-//   });
+  });
 
 
 
   // Cancel Button
-//   cancel.addEventListener('click', () => {
+  cancel.addEventListener('click', () => {
 
-//   });
+  });
 
