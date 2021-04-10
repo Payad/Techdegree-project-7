@@ -75,128 +75,128 @@ alertBanner.innerHTML =
 
   //hourly button chart
 
-  const hourlyData = document.getElementById("traffic-chart");
-  chart = new Chart(hourlyData, {
-      type:'line',
-      labels: ["15-28", "12-4", "2-20", "16-7", "18-5", "20-10", "30-15", "17-8", "11-3", "24-13", "21-13"],
-    //   ["16-22", "23-29", "30-5", "6-12", "13-19", "20-26", "27-3", 
-    //   "4-10", "11-17", "18-24", "25-31"],
-      datasets: [{
-        data: [750, 1250, 1000, 2000, 1500, 1750, 1250, 1850, 2250, 1500,
-       2500],
-           backgroundColor: 'rgba(116, 119, 191, .3)',
-           borderWidth: 1,
-      }],
-});
+//   const hourlyData = document.getElementById("traffic-chart");
+//   chart = new Chart(hourlyData, {
+//       type:'line',
+//       labels: ["15-28", "12-4", "2-20", "16-7", "18-5", "20-10", "30-15", "17-8", "11-3", "24-13", "21-13"],
+//     //   ["16-22", "23-29", "30-5", "6-12", "13-19", "20-26", "27-3", 
+//     //   "4-10", "11-17", "18-24", "25-31"],
+//       datasets: [{
+//         data: [750, 1250, 1000, 2000, 1500, 1750, 1250, 1850, 2250, 1500,
+//        2500],
+//            backgroundColor: 'rgba(116, 119, 191, .3)',
+//            borderWidth: 1,
+//       }],
+// });
 
-    document.getElementById('hourly').addEventListener('click', () => {
-    chart.config.data = {
-      type: 'line',
-      labels: ["15-28", "12-4", "2-20", "16-7", "18-5", "20-10", "30-15", "17-8", "11-3", "24-13", "21-13"],
-    //   ["16-22", "23-29", "30-5", "6-12", "13-19", "20-26", "27-3", 
-    //   "4-10", "11-17", "18-24", "25-31"],
-      datasets: [{
-        data: [750, 1250, 1000, 2000, 1500, 1750, 1250, 1850, 2250, 1500,
-            2500],
+//     document.getElementById('hourly').addEventListener('click', () => {
+//     chart.config.data = {
+//       type: 'line',
+//       labels: ["15-28", "12-4", "2-20", "16-7", "18-5", "20-10", "30-15", "17-8", "11-3", "24-13", "21-13"],
+//     //   ["16-22", "23-29", "30-5", "6-12", "13-19", "20-26", "27-3", 
+//     //   "4-10", "11-17", "18-24", "25-31"],
+//       datasets: [{
+//         data: [750, 1250, 1000, 2000, 1500, 1750, 1250, 1850, 2250, 1500,
+//             2500],
         
-           backgroundColor: 'rgba(116, 119, 191, .3)',
-           borderWidth: 1,
-      }],
-        }
-        chart.update();
-    });
+//            backgroundColor: 'rgba(116, 119, 191, .3)',
+//            borderWidth: 1,
+//       }],
+//         }
+//         chart.update();
+//     });
 
     // daily button chart
 
-    const dailyLineData = document.getElementById('traffic-chart');
-    chart = new Chart(dailyLineData, {
-        type: 'line',
-        labels: ["32-40", "41-45", "46-57", "58-62", "63-70", "71-75", "76-80", 
-    "81-95", "96-100", "105-120", "121-132"],
-    datasets: [{
-        data:  [750, 1250, 1000, 1200, 1350, 1750, 1250, 500, 2250, 1500,
-            2800],
-    //     [750, 1250, 1000, 2000, 1500, 1750, 1250, 1850, 2250, 1500,
-    //    2500],
-           backgroundColor: 'rgba(116, 119, 191, .3)',
-           borderWidth: 1,
-        }],
-    });
+    // const dailyLineData = document.getElementById('traffic-chart');
+    // chart = new Chart(dailyLineData, {
+    //     type: 'line',
+    //     labels: ["32-40", "41-45", "46-57", "58-62", "63-70", "71-75", "76-80", 
+    // "81-95", "96-100", "105-120", "121-132"],
+    // datasets: [{
+    //     data:  [750, 1250, 1000, 1200, 1350, 1750, 1250, 500, 2250, 1500,
+    //         2800],
+    // //     [750, 1250, 1000, 2000, 1500, 1750, 1250, 1850, 2250, 1500,
+    // //    2500],
+    //        backgroundColor: 'rgba(116, 119, 191, .3)',
+    //        borderWidth: 1,
+    //     }],
+    // });
 
-    document.getElementById('daily').addEventListener('click', () => {
-        chart.config.data = {
-            type: 'line',
-            labels: ["32-40", "41-45", "46-57", "58-62", "63-70", "71-75", "76-80", 
-        "81-95", "96-100", "105-120", "121-132"],
-        datasets: [{
-            data: [750, 1250, 1000, 2000, 1500, 1750, 1250, 1850, 2250, 1500,
-           2500],
-               backgroundColor: 'rgba(116, 119, 191, .3)',
-               borderWidth: 1,
-            }],
-        }
-        chart.update();
-    });
+    // document.getElementById('daily').addEventListener('click', () => {
+    //     chart.config.data = {
+    //         type: 'line',
+    //         labels: ["32-40", "41-45", "46-57", "58-62", "63-70", "71-75", "76-80", 
+    //     "81-95", "96-100", "105-120", "121-132"],
+    //     datasets: [{
+    //         data: [750, 1250, 1000, 2000, 1500, 1750, 1250, 1850, 2250, 1500,
+    //        2500],
+    //            backgroundColor: 'rgba(116, 119, 191, .3)',
+    //            borderWidth: 1,
+    //         }],
+    //     }
+    //     chart.update();
+    // });
 
     // weekly button chart
 
-    const weeklyData = document.getElementById('traffic-chart');
-    chart = new Chart(weeklyData, {
-        type: 'line',
-        labels: ["4-12", "13-17", "18-24", "25-32", "33-43", "44-51", "52-67", 
-    "68-73", "74-81", "82-96", "97-105"],
-    datasets: [{
-        data: [750, 1250, 1000, 2000, 1500, 1750, 1250, 1850, 2250, 1500,
-       2500],
-           backgroundColor: 'rgba(116, 119, 191, .3)',
-           borderWidth: 1,
-        }]
-    });
+    // const weeklyData = document.getElementById('traffic-chart');
+    // chart = new Chart(weeklyData, {
+    //     type: 'line',
+    //     labels: ["4-12", "13-17", "18-24", "25-32", "33-43", "44-51", "52-67", 
+    // "68-73", "74-81", "82-96", "97-105"],
+    // datasets: [{
+    //     data: [750, 1250, 1000, 2000, 1500, 1750, 1250, 1850, 2250, 1500,
+    //    2500],
+    //        backgroundColor: 'rgba(116, 119, 191, .3)',
+    //        borderWidth: 1,
+    //     }]
+    // });
 
-    document.getElementById('weekly').addEventListener('click', () => {
-        chart.config.data = {
-            type: 'line',
-            labels: ["4-12", "13-17", "18-24", "25-32", "33-43", "44-51", "52-67", 
-    "68-73", "74-81", "82-96", "97-105"],
-    datasets: [{
-        data: [750, 1250, 1000, 2000, 1500, 1750, 1250, 1850, 2250, 1500,
-       2500],
-           backgroundColor: 'rgba(116, 119, 191, .3)',
-           borderWidth: 1,
-        }]
-        }
-        chart.update();
-    });
+    // document.getElementById('weekly').addEventListener('click', () => {
+    //     chart.config.data = {
+    //         type: 'line',
+    //         labels: ["4-12", "13-17", "18-24", "25-32", "33-43", "44-51", "52-67", 
+    // "68-73", "74-81", "82-96", "97-105"],
+    // datasets: [{
+    //     data: [750, 1250, 1000, 2000, 1500, 1750, 1250, 1850, 2250, 1500,
+    //    2500],
+    //        backgroundColor: 'rgba(116, 119, 191, .3)',
+    //        borderWidth: 1,
+    //     }]
+    //     }
+    //     chart.update();
+    // });
 
     // monthly data chart
 
-     const monthlyData = document.getElementById('traffic-chart');
-     chart = new Chart(monthlyData, {
-        type: 'line',
-        labels: ["3-16", "5-15", "6-24", "7-18", "8-20", "9-17", "10-22", 
-        "11-22", "12-14", "13-26", "14-27"],
-        datasets: [{
-            data: [750, 1250, 1000, 2000, 1500, 1750, 1250, 1850, 2250, 1500,
-           2500],
-               backgroundColor: 'rgba(116, 119, 191, .3)',
-               borderWidth: 1,
-        }]
-    });
+    //  const monthlyData = document.getElementById('traffic-chart');
+    //  chart = new Chart(monthlyData, {
+    //     type: 'line',
+    //     labels: ["3-16", "5-15", "6-24", "7-18", "8-20", "9-17", "10-22", 
+    //     "11-22", "12-14", "13-26", "14-27"],
+    //     datasets: [{
+    //         data: [750, 1250, 1000, 2000, 1500, 1750, 1250, 1850, 2250, 1500,
+    //        2500],
+    //            backgroundColor: 'rgba(116, 119, 191, .3)',
+    //            borderWidth: 1,
+    //     }]
+    // });
 
-    document.getElementById('monthly').addEventListener('click', () => {
-        chart.config.data = {
-        type: 'line',
-        labels: ["3-16", "5-15", "6-24", "7-18", "8-20", "9-17", "10-22", 
-    "11-22", "12-14", "13-26", "14-27"],
-    datasets: [{
-        data: [750, 1250, 1000, 2000, 1500, 1750, 1250, 1850, 2250, 1500,
-       2500],
-           backgroundColor: 'rgba(116, 119, 191, .3)',
-           borderWidth: 1,
-    }]
-     }
-     chart.update();
-    });
+    // document.getElementById('monthly').addEventListener('click', () => {
+    //     chart.config.data = {
+    //     type: 'line',
+    //     labels: ["3-16", "5-15", "6-24", "7-18", "8-20", "9-17", "10-22", 
+    // "11-22", "12-14", "13-26", "14-27"],
+    // datasets: [{
+    //     data: [750, 1250, 1000, 2000, 1500, 1750, 1250, 1850, 2250, 1500,
+    //    2500],
+    //        backgroundColor: 'rgba(116, 119, 191, .3)',
+    //        borderWidth: 1,
+    // }]
+    //  }
+    //  chart.update();
+    // });
 
        
 //   const dailyData = document.getElementsByClassName("traffic-nav-link");
