@@ -2,7 +2,7 @@ const user = document.getElementById("userField");
 const message = document.getElementById("messageField");
 const send = document.getElementById("send");
 // const save = document.getElementById("button #save");
-const cancel = document.getElementById("button #cancel");
+// const cancel = document.getElementById("button #cancel");
 // const hourlyButton = document.getElementById("hourly");
 
 
@@ -12,13 +12,13 @@ alertBanner.innerHTML =
 `<div class="alert-banner">
 <p><strong>Alert:</strong> You have <strong>6</srong> overdue tasks
  to complete</p>
- <p class="alert-banner-close">x</p>
+ <p class="alert-banner-close">&times;</p>
  </div>`
 
  alertBanner.addEventListener('click', e => {
      const element = e.target;
-     if (element.classlist.contains("alert-banner-close")) {
-         alert.style.display = "none"
+     if (element.classList.contains("alert-banner-close")) {
+         alertBanner.style.display = "none"
      }
  });
 
@@ -559,7 +559,17 @@ document.getElementById('monthly').addEventListener('click', () => {
       }
   });
 
-// Save button
+// Save button localStorage
+
+let toggleField = document.getElementById('on');
+let timezone = document.getElementById('timezone');
+let save = document.getElementById('save');
+
+function saveResponses() {
+    localStorage.setItem('on', toggleField.value);
+    localStorage.setItem('timezone', timezone.value);
+}
+save.addEventListener('click', saveResponses);
 
 // function save() {
 //     saveLocalStorage = document.getElementById("settings");
@@ -571,10 +581,18 @@ document.getElementById('monthly').addEventListener('click', () => {
 //     localStorage.setItem("settings", saveLocalStorage.value)
 //   });
 
+// Cancel Button
 
+    toggleField = document.getElementById('off');
+    timeZone = document.getElementById('timezone');
+    let cancel = document.getElementById('cancel');
 
-  // Cancel Button
-//   cancel.addEventListener('click', () => {
+    function cancelResponses() {
+        clear();
+        // localStorage.removeItem('off', toggleField.value);
+        // localStorage.removeItem('timezone', timezone.value);
+    }
+    cancel.addEventListener('click', cancelResponses);
 
-//   });
+  
 

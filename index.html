@@ -387,14 +387,15 @@
     <!-- custom toggle code from external resources will go here -->
     <!-- courtesy of https://ghinda.net/css-toggle-switch/index.html -->
 
+    <form>
     <div class="toggle-switch-1">
         <p class="notification-1">Send Email Notifications</p>
     <!-- toggle switch goes here -->
         <label class="switch-light switch-candy" onclick="">
         <input type="checkbox">
             <span>
-                <span>Off</span>
-                <span>On</span>
+                <span id="off">Off</span>
+                <span id="on">On</span>
                 <a></a>
             </span>
         </label>
@@ -406,8 +407,8 @@
         <label class="switch-light switch-candy" onclick="">
         <input type="checkbox">
             <span>
-                <span>Off</span>
-                <span>On</span>
+                <span id="off">Off</span>
+                <span id="on">On</span>
                 <a></a>
             </span>
         </label>
@@ -437,10 +438,11 @@
 </select>
 
     <div class="settings-button">
-        <button onclick="save()" type="button" class="button-primary" id="save">Save</button>
+        <button type="button" class="button-primary" id="save">Save</button>
         
         <button class="button-disabled" id="cancel">Cancel</button>
     </div>
+    </form>
 
 </section>
 </div>
@@ -452,11 +454,11 @@
                 
 
         </main>
-        <script type="text/javascript">
+        <!-- <script type="text/javascript">
         function save() {
             const saveLocalStorage = document.getElementById('save');
             savelocalStorage.setItem('save', savelocalStorage.value);
-        } </script>
+        } </script> -->
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
         <script src="webApp.js"></script>
     </body>

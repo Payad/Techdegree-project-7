@@ -272,10 +272,17 @@ li.traffic-nav-link {
 button {
   border-radius: 20%;
   padding:1px;
-  margin-right: 10px;
+  /* margin-right: 10px; */
   border: none;
   /* background-color: green;
   color: white; */
+}
+
+button#hourly,
+button#daily,
+button#weekly,
+button#monthly {
+  margin-right: 10px;
 }
 
 /* button.hourly {
@@ -685,6 +692,7 @@ main {
 @media (min-width: 768px) {
   header {
     grid-area: header;
+    height: 85px;
   }
   
   div {
@@ -711,7 +719,9 @@ main {
 
  .nav {
    margin-bottom: 20px;
-   margin-top: 20px;
+   /* margin-top: 20px; */
+   /* margin-top: 45px; */
+   margin-top: 25px;
  }
 
  /* .nav {
@@ -748,6 +758,7 @@ main {
    width: 80%;
    margin-right: 20px;
    margin-left: 20%;
+   margin-top: 25px;
  }
 
  .alert-banner {
@@ -762,6 +773,7 @@ main {
  h2 {
    /* margin-left: 10px; */
    font-size: 20px;
+   margin-top: 25px;
  }
 
  .traffic-header {
@@ -775,7 +787,8 @@ main {
  }
 
  ul.traffic-nav-button {
-   margin-top: 5px;
+   margin-top: 7px;
+   margin-left: 430px;
  }
 
  .dailyMobile-flex {
@@ -1087,6 +1100,7 @@ main {
 @media (min-width: 768px) {
   .main {
     grid-template-columns: 1fr;
+    margin-top: 1px;
   }
   .traffic, .social-container {
     grid-column: 1 / span 2;
@@ -1125,6 +1139,7 @@ main {
 @media (min-width: 1024px) {
   .main {
     grid-template-columns: 1fr;
+    margin-top: auto;
    }
 
   /* .widget-container-full {
@@ -1154,6 +1169,12 @@ main {
 @media (min-width: 1024px) {
   header {
     grid-area: header;
+    /* height: 105px; */
+    height: 84px;
+  }
+
+  .nav {
+    margin-top: 24px;
   }
   
   div {
@@ -1182,6 +1203,10 @@ main {
   }
   p.alert-banner-close {
     margin-left: 620px;
+  }
+
+  ul.traffic-nav-button {
+    margin-left: 640px;
   }
 
   .widget-half {
