@@ -337,7 +337,38 @@
     <h3 class="h3">MESSAGE USER</h3>
     <!-- <div class="widget-half"> -->
 <form class="widget-container">
-    <input type="text" placeholder="Search for user" class="form-field" id="userfield">
+    <input type="text" placeholder="Search for user" class="form-field" id="userfield" list="memberNames">
+    <datalist id="memberNames">
+        <option value="Aaron"></option>
+        <option value="Adam"></option>
+        <option value="Alexander"></option>
+        <option value="Amy"></option>
+        <option value="Anna"></option>
+        <option value="Bethany"></option>
+        <option value="Bola"></option>
+        <option value="Blake"></option>
+        <option value="Caitlin"></option>
+        <option value="Connor"></option>
+        <option value="Charles"></option>
+        <option value="Dale"></option>
+        <option value="Dan"></option>
+        <option value="Dawn"></option>
+        <option value="Ethan"></option>
+        <option value="Emily"></option>
+        <option value="Frank"></option>
+        <option value="Faith"></option>
+        <option value="George"></option>
+        <option value="Henry"></option>
+        <option value="James"></option>
+        <option value="Jamie"></option>
+        <option value="John"></option>
+        <option value="Keanu"></option>
+        <option value="Lexi"></option>
+        <option value="Micheal"></option>
+        <option value="Vanessa"></option>
+        <option value="Victor"></option>
+        <option value="Victoria"></option>
+    </datalist>
     <textarea placeholder="Message for user" class="form-area" id="messageField"></textarea>
     <div>
     <button class="button-primary" id="send">Send</button>
@@ -349,7 +380,7 @@
 <hr class="messageSettings-hr-1024px">
 
     <!-- local setting widget -->
-    <div class="settings">
+    <div class="settings" id="settings">
 <section class="settings">
     <h3 class="setting">SETTINGS</h3>
     <!-- <div class="widget-container-half"> -->
@@ -406,7 +437,8 @@
 </select>
 
     <div class="settings-button">
-        <button class="button-primary" id="save">Save</button>
+        <button onclick="save()" type="button" class="button-primary" id="save">Save</button>
+        
         <button class="button-disabled" id="cancel">Cancel</button>
     </div>
 
@@ -420,6 +452,11 @@
                 
 
         </main>
+        <script type="text/javascript">
+        function save() {
+            const saveLocalStorage = document.getElementById('save');
+            savelocalStorage.setItem('save', savelocalStorage.value);
+        } </script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
         <script src="webApp.js"></script>
     </body>

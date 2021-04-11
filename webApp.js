@@ -1,7 +1,7 @@
 const user = document.getElementById("userField");
 const message = document.getElementById("messageField");
 const send = document.getElementById("send");
-const save = document.getElementById("button #save");
+// const save = document.getElementById("button #save");
 const cancel = document.getElementById("button #cancel");
 // const hourlyButton = document.getElementById("hourly");
 
@@ -15,7 +15,7 @@ alertBanner.innerHTML =
  <p class="alert-banner-close">x</p>
  </div>`
 
- alertBanner.addEventListener('click', (e) => {
+ alertBanner.addEventListener('click', e => {
      const element = e.target;
      if (element.classlist.contains("alert-banner-close")) {
          alert.style.display = "none"
@@ -73,7 +73,208 @@ alertBanner.innerHTML =
   });
 
 
+  const hourlyData = {
+    labels:  ["15-28", "12-4", "2-20", "16-7", "18-5", "20-10", "30-15", "17-8", "11-3", "24-13", "21-13"],
+     datasets: [{
+         data: [750, 1250, 1000, 2000, 1500, 1750, 1250, 1850, 2250, 1500,
+        2500],
+            backgroundColor: 'rgba(116, 119, 191, .3)',
+            borderWidth: 1,
+     }],
+  };
+
+  document.getElementById('hourly').addEventListener('click', () => {
+      trafficChart.config.data = hourlyData;
+      trafficChart.update();
+  });
+
+ const dailyLineData = {
+  labels: ["32-40", "41-45", "46-57", "58-62", "63-70", "71-75", "76-80", 
+        "81-95", "96-100", "105-120", "121-132"],
+  datasets: [{
+    data: [750, 1250, 1000, 2000, 1500, 1750, 1250, 1850, 2250, 1500,
+   2500],
+       backgroundColor: 'rgba(116, 119, 191, .3)',
+       borderWidth: 1,
+    }],
+};
+
+document.getElementById('daily').addEventListener('click', () => {
+    trafficChart.config.data = dailyLineData;
+    trafficChart.update();
+});
+
+const weeklyData = {
+    labels: ["4-12", "13-17", "18-24", "25-32", "33-43", "44-51", "52-67", 
+    "68-73", "74-81", "82-96", "97-105"],
+    datasets: [{
+     data: [750, 1250, 1000, 2000, 1500, 1750, 1250, 1850, 2250, 1500,
+    2500],
+        backgroundColor: 'rgba(116, 119, 191, .3)',
+        borderWidth: 1,
+     }],
+};
+
+document.getElementById('weekly').addEventListener('click', () => {
+    trafficChart.config.data = weeklyData;
+    trafficChart.update();
+});
+
+const monthlyData = {
+    labels: ["3-16", "5-15", "6-24", "7-18", "8-20", "9-17", "10-22", 
+        "11-22", "12-14", "13-26", "14-27"],
+        datasets: [{
+            data: [750, 1250, 1000, 2000, 1500, 1750, 1250, 1850, 2250, 1500,
+           2500],
+               backgroundColor: 'rgba(116, 119, 191, .3)',
+               borderWidth: 1,
+        }],
+};
+
+document.getElementById('monthly').addEventListener('click', () => {
+    trafficChart.config.data = monthlyData;
+    trafficChart.update();
+});
+
+
+//   const hourlyTraffic = document.getElementById("traffic-chart");
+
+//  let hourlyData = {
+//      labels:  ["15-28", "12-4", "2-20", "16-7", "18-5", "20-10", "30-15", "17-8", "11-3", "24-13", "21-13"],
+//     //  ["16-22", "23-29", "30-5", "6-12", "13-19", "20-26", "27-3", 
+//     //  "4-10", "11-17", "18-24", "25-31"],
+//      datasets: [{
+//          data: [750, 1250, 1000, 2000, 1500, 1750, 1250, 1850, 2250, 1500,
+//         2500],
+//             backgroundColor: 'rgba(116, 119, 191, .3)',
+//             borderWidth: 1,
+//      }]
+        
+//  };
+
+//  let hourlyOptions = {
+//      aspectRatio: 2.5,
+//      animation: {
+//          duration: 0
+//      },
+//      scales: {
+//          yAxes: [{
+//              ticks: {
+//                  beginAtZero:true
+//              }
+//          }]
+//      },
+//      legend : {
+//          display: false
+//      }
+//  };
+//   let hourlyChart = new Chart(hourlyTraffic, {
+//       type: 'line',
+//       data: hourlyData,
+//       optiopns: hourlyOptions
+//   });
+
+//    document.getElementsByClassName('traffic-nav-button').addEventListener('click', (e) => {
+//         hourlyButton = e.target;
+//         if (hourlyButton === 'HOURLY') {
+//             chart.config.data = {
+//             type: 'line',    
+//             labels:  ["15-28", "12-4", "2-20", "16-7", "18-5", "20-10", "30-15", "17-8", "11-3", "24-13", "21-13"],
+//             // //   ["16-22", "23-29", "30-5", "6-12", "13-19", "20-26", "27-3", 
+//             // //   "4-10", "11-17", "18-24", "25-31"],
+//      datasets: [{
+//          data: [750, 1250, 1000, 2000, 1500, 1750, 1250, 1850, 2250, 1500,
+//         2500],
+//             backgroundColor: 'rgba(116, 119, 191, .3)',
+//             borderWidth: 1,
+//      }]
+//     }
+//     chart.update();
+//         };
+//   });
+
+
+
+
+
+
+
+
   //hourly button chart
+
+//   const hourlyData = document.getElementById("traffic-chart");
+//   chart = new Chart(hourlyData, {
+//       type:'line',
+    //   labels: ["15-28", "12-4", "2-20", "16-7", "18-5", "20-10", "30-15", "17-8", "11-3", "24-13", "21-13"],
+    // //   ["16-22", "23-29", "30-5", "6-12", "13-19", "20-26", "27-3", 
+    // //   "4-10", "11-17", "18-24", "25-31"],
+//       datasets: [{
+//         data: [750, 1250, 1000, 2000, 1500, 1750, 1250, 1850, 2250, 1500,
+//        2500],
+//            backgroundColor: 'rgba(116, 119, 191, .3)',
+//            borderWidth: 1,
+//       }],
+// });
+
+//     document.getElementByClassName('traffic-nav-button').addEventListener('click', () => {
+//     chart.config.data = {
+//       type: 'line',
+//       labels: ["15-28", "12-4", "2-20", "16-7", "18-5", "20-10", "30-15", "17-8", "11-3", "24-13", "21-13"],
+//     //   ["16-22", "23-29", "30-5", "6-12", "13-19", "20-26", "27-3", 
+//     //   "4-10", "11-17", "18-24", "25-31"],
+//       datasets: [{
+//         data: [750, 1250, 1000, 2000, 1500, 1750, 1250, 1850, 2250, 1500,
+//             2500],
+        
+//            backgroundColor: 'rgba(116, 119, 191, .3)',
+//            borderWidth: 1,
+//       }],
+//         }
+//         chart.update();
+//     });
+
+
+
+
+
+
+
+    // const dailyLineData = document.getElementById('traffic-chart');
+    // chart = new Chart(dailyLineData, {
+    //     type:'line',
+    //     labels: ["15-28", "12-4", "2-20", "16-7", "18-5", "20-10", "30-15", "17-8", "11-3", "24-13", "21-13"],
+    //   //   ["16-22", "23-29", "30-5", "6-12", "13-19", "20-26", "27-3", 
+    //   //   "4-10", "11-17", "18-24", "25-31"],
+    //     datasets: [{
+    //       data: [750, 1250, 1000, 2000, 1500, 1750, 1250, 1850, 2250, 1500,
+    //      2500],
+    //          backgroundColor: 'rgba(116, 119, 191, .3)',
+    //          borderWidth: 1,
+    //       }],
+  
+    //   });
+    //   document.querySelector('ul#traffic-nav-button').addEventListener('click', (e) => {
+    //       button = e.target;
+    //       if (button === 'DAILY') {
+    //           chart.config.data = {
+    //                 type: 'line',
+    //               labels: ["15-28", "12-4", "2-20", "16-7", "18-5", "20-10", "30-15", "17-8", "11-3", "24-13", "21-13"], 
+    //               datasets: [{
+    //                 data: [750, 1250, 1000, 2000, 1500, 1750, 1250, 1850, 2250, 1500,
+    //                2500],
+    //                    backgroundColor: 'rgba(116, 119, 191, .3)',
+    //                    borderWidth: 1,
+    //                 }],
+
+    //           }
+    //       }
+    //       chart.update();
+    //   });
+
+        
+    
+
+
 
 //   const hourlyData = document.getElementById("traffic-chart");
 //   chart = new Chart(hourlyData, {
@@ -253,7 +454,7 @@ alertBanner.innerHTML =
   const dailyCanvas = document.getElementById("daily-chart");
 
   const dailyData = {
-      labels: ["S", "M", "T", "W", "F", "S"],
+      labels: ["S", "M", "T", "W", "T", "F", "S"],
       datasets: [{
           label: '# of Hits',
           data: [75, 115, 175, 125, 225, 200, 100],
@@ -358,9 +559,16 @@ alertBanner.innerHTML =
       }
   });
 
-  // Save button
-//   save.addEventListener('click', () => {
+// Save button
 
+// function save() {
+//     saveLocalStorage = document.getElementById("settings");
+//     localStroage.setItem("settings", saveLocalStorage.value);
+// }
+
+// const saveLocalStorage = document.getElementById("settings")
+//   saveLocalStorage.addEventListener('click', () => {
+//     localStorage.setItem("settings", saveLocalStorage.value)
 //   });
 
 
