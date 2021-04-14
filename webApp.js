@@ -15,24 +15,13 @@ notification1.innerHTML = `<div class="alertBox1">
 </div>`
 
 const clickEvent = document.getElementById('bell-icon');
-document.getElementById('alertBox1');
+document.getElementById('alertBox1').style.visibility = 'hidden';
 clickEvent.addEventListener('click', displayAlertBox1);
    
 
  function displayAlertBox1() {
      notification1.style.visibility = 'visible';
  }
-
-// bell-icon.addEventListener('click', () => {
-//     notification1.style.visibility = 'visible';
-// });
-
-// notification1.addEventListener('click', (e) => {
-//     const element = e.target;
-//     if (element.classList.contains('alertBox1-close')) {
-//         notification1.style.display = 'none';
-//     }
-// });
 
 const notification2 = document.getElementById('alertBox2');
 notification2.innerHTML = `<div class="alertBox2">
@@ -42,15 +31,28 @@ notification2.innerHTML = `<div class="alertBox2">
 </div>
 </div>`
 
+const clickEvent2 = document.getElementById('bell-icon');
+document.getElementById('alertBox2').style.visibility = 'hidden';
+clickEvent2.addEventListener('click', displayAlertBox2);
+
+function displayAlertBox2() {
+    notification2.style.visibility = 'visible';
+}
+
 
 // const clickEvent = document.getElementById('bell-icon');
-// notification1 = document.getElementById('alertBox1');
+// document.getElementById('alertBox2').style.visibility = 'hidden';
+
+// clickEvent.addEventListener('click', displayAlertBox2());
+
+// function displayAlertBox2() {
+//     notification2.style.visibility = 'visible';
+// }
 // clickEvent.addEventListener('click', (e) => {
 //     const element = e.target;
 //     if (element.classList.contains('alertBox1')) {
 //         notification1.style.visibility = 'visible';
 //     }
-// });
 
 // bell-icon.addEventListener('click', () => {
 //     notification2.style.visibility = 'visible';

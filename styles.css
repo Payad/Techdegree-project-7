@@ -762,6 +762,14 @@ main {
   "nav main";
  }
 
+ .alertBox1 {
+   margin-left: 10px;
+ }
+
+ .alertBox2 {
+   margin-left: 10px;
+ }
+
  .header-right {
    margin-left: 65%;
  }
