@@ -10,6 +10,7 @@ const notification1 = document.getElementById('alertBox1');
 notification1.innerHTML = `<div class="alertBox1">
 <div class="notif1">
 <p><strong>Alert:</strong> You have <strong>1</strong> new update</p>
+<p><strong>Alert:</strong> You have <strong>2</strong> new comments</p>
 <p class="alertBox1-close">&times;</p>
 </div>
 </div>`
@@ -23,21 +24,21 @@ clickEvent.addEventListener('click', displayAlertBox1);
      notification1.style.visibility = 'visible';
  }
 
-const notification2 = document.getElementById('alertBox2');
-notification2.innerHTML = `<div class="alertBox2">
-<div class="notif2">
-<p><strong>Alert:</strong> You have <strong>2</strong> new comments</p>
-<p class="alertBox2-close">&times;</p>
-</div>
-</div>`
+// const notification2 = document.getElementById('alertBox2');
+// notification2.innerHTML = `<div class="alertBox2">
+// <div class="notif2">
+// <p class="alertP><strong>Alert:</strong> You have <strong>2</strong> new comments</p>
+// <p class="alertBox2-close">&times;</p>
+// </div>
+// </div>`
 
-const clickEvent2 = document.getElementById('bell-icon');
-document.getElementById('alertBox2').style.visibility = 'hidden';
-clickEvent2.addEventListener('click', displayAlertBox2);
+// const clickEvent2 = document.getElementById('bell-icon');
+// document.getElementById('alertBox2').style.visibility = 'hidden';
+// clickEvent2.addEventListener('click', displayAlertBox2);
 
-function displayAlertBox2() {
-    notification2.style.visibility = 'visible';
-}
+// function displayAlertBox2() {
+//     notification2.style.visibility = 'visible';
+// }
 
 
 // const clickEvent = document.getElementById('bell-icon');

@@ -57,22 +57,22 @@ p.alertBox1-close {
   margin-left: 5px;
 }
 
-.notif2 {
+/* .notif2 {
   display: flex;
   border: 1px solid black;
   border-radius: 6px;
   background-color: lightblue;
   color: white;
   padding: 2px;
-}
+} */
 
-div#alertBox2 {
+/* div#alertBox2 {
   font-size: 7px;
 }
 
 p.alertBox2-close {
   margin-left: 5px;
-}
+} */
 
 .vertical-line {
   border-left: 1px solid darkgrey;
@@ -102,6 +102,8 @@ p.alertBox2-close {
   fill: white;
   height: 20px;
   width: 20px;
+  position: relative;
+  top: 10px;
 }
 
 .bell-icon .bell-icon path {
@@ -764,14 +766,34 @@ main {
 
  .alertBox1 {
    margin-left: 10px;
+   position: absolute;
+   right: 60px;
+ }
+ .alertP {
+   display: flex;
  }
 
- .alertBox2 {
+ /* .alertBox2 {
    margin-left: 10px;
+ } */
+
+ .bell-icon svg {
+   position: relative;
+   /* top: 2px; */
+   /* bottom: 16px; */
+   /* left: 90px; */
+   /* margin-bottom: 30px; */
+   margin-bottom: 20px;
  }
+
+ /* header h1 {
+   margin-right: 475px;
+ } */
 
  .header-right {
-   margin-left: 65%;
+   /* margin-left: 65%; */
+   margin-left: 75%;
+   /* margin-left: 64%; */
  }
 
  .nav {
