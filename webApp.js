@@ -6,6 +6,82 @@ const send = document.getElementById("send");
 // const hourlyButton = document.getElementById("hourly");
 
 
+const notification1 = document.getElementById('alertBox1');
+notification1.innerHTML = `<div class="alertBox1">
+<div class="notif1">
+<p><strong>Alert:</strong> You have <strong>1</strong> new update</p>
+<p class="alertBox1-close">&times;</p>
+</div>
+</div>`
+
+const clickEvent = document.getElementById('bell-icon');
+document.getElementById('alertBox1');
+clickEvent.addEventListener('click', displayAlertBox1);
+   
+
+ function displayAlertBox1() {
+     notification1.style.visibility = 'visible';
+ }
+
+// bell-icon.addEventListener('click', () => {
+//     notification1.style.visibility = 'visible';
+// });
+
+// notification1.addEventListener('click', (e) => {
+//     const element = e.target;
+//     if (element.classList.contains('alertBox1-close')) {
+//         notification1.style.display = 'none';
+//     }
+// });
+
+const notification2 = document.getElementById('alertBox2');
+notification2.innerHTML = `<div class="alertBox2">
+<div class="notif2">
+<p><strong>Alert:</strong> You have <strong>2</strong> new comments</p>
+<p class="alertBox2-close">&times;</p>
+</div>
+</div>`
+
+
+// const clickEvent = document.getElementById('bell-icon');
+// notification1 = document.getElementById('alertBox1');
+// clickEvent.addEventListener('click', (e) => {
+//     const element = e.target;
+//     if (element.classList.contains('alertBox1')) {
+//         notification1.style.visibility = 'visible';
+//     }
+// });
+
+// bell-icon.addEventListener('click', () => {
+//     notification2.style.visibility = 'visible';
+// });
+
+// notification2.addEventListener('click', (e) => {
+//    const element = e.target;
+//     if (element.classList.contains('alertBox2-close')) {
+//     notification2.style.display = 'none';
+//     }
+// });
+
+
+// bell-icon.addEventListener('click', () => {
+
+//     if (button === "BELL-ICON") {
+//      notification1.style.visibility = 'visible'
+//     } else {
+//      notification.style.display = 'none'
+//     }
+// });
+
+// notification1.addEventListener('click', );
+
+
+// const notification2 = document.getElementById('alertBox2');
+// notification2.innerHTML = `<div class="alertBox2">
+// <p><strong>Notification:</strong You have 2 new comments</p>
+// <p class="alertBox2-close">&times;</p>
+// </div>`
+
 
 const alertBanner = document.getElementById("alert");
 alertBanner.innerHTML = 
@@ -564,6 +640,14 @@ document.getElementById('monthly').addEventListener('click', () => {
 let toggleField = document.getElementById('on');
 let timezone = document.getElementById('timezone');
 let save = document.getElementById('save');
+let settings = document.getElementById('settings');
+
+// save.addEventListener('click', () => {
+// if (button === 'SAVE') {
+// localStorage.setItem('settings', JSON.stringify(settings));
+// }
+// });
+
 
 function saveResponses() {
     localStorage.setItem('on', toggleField.value);
@@ -584,13 +668,22 @@ save.addEventListener('click', saveResponses);
 // Cancel Button
 
     toggleField = document.getElementById('off');
+    // toggleField = document.getElementById('on');
     timeZone = document.getElementById('timezone');
     let cancel = document.getElementById('cancel');
+    settings = document.getElementById('settings');
+
+//     cancel.addEventListener('click', () => {
+//         if (button === 'CANCEL') {
+//     localStorage.removeItem('settings', JSON.stringify(settings));
+//         }
+// });
 
     function cancelResponses() {
-        clear();
-        // localStorage.removeItem('off', toggleField.value);
-        // localStorage.removeItem('timezone', timezone.value);
+        // clear();
+        localStorage.removeItem('on');
+        // localStorage.removeItem('off');
+        localStorage.removeItem('timezone');
     }
     cancel.addEventListener('click', cancelResponses);
 

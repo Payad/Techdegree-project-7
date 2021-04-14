@@ -21,15 +21,58 @@ header {
 }
 
 h1.tradeMark {
-  font-size: 6px;
-  margin-left: 70px;
-  margin-bottom: -8px;
+  /* font-size: 6px; */
+  font-size: 5px;
+  /* margin-left: 57px; */
+  /* margin-left: 70px; */
+  /* margin-bottom: -8px; */
+  margin-bottom: -7px;
+  margin-left: 38px;
 }
 
 /* .title {
   display: flex;
   
 } */
+
+.alertBox1 {
+  display: flex;
+  font-size: 7px;
+   /* font-size: 5px; */
+  /* margin-left: 2px; */
+  /* margin-bottom: 10px; */
+  margin-bottom: 3px;
+}
+
+.notif1 {
+  display: flex;
+  border: 1px solid black;
+  border-radius: 6px;
+  background-color: lightblue;
+  color: white;
+  padding: 2px;
+}
+
+p.alertBox1-close {
+  margin-left: 5px;
+}
+
+.notif2 {
+  display: flex;
+  border: 1px solid black;
+  border-radius: 6px;
+  background-color: lightblue;
+  color: white;
+  padding: 2px;
+}
+
+div#alertBox2 {
+  font-size: 7px;
+}
+
+p.alertBox2-close {
+  margin-left: 5px;
+}
 
 .vertical-line {
   border-left: 1px solid darkgrey;
@@ -45,7 +88,8 @@ h1.tradeMark {
 }
 
 .header-right {
-  margin-left: 60px;
+  margin-left: 10px;
+  /* margin-left: 60px; */
   margin-right: auto;
 }
 
@@ -90,9 +134,11 @@ h1.tradeMark {
 }
 
  header h1 {
-  font-size: 15px;
+  /* font-size: 15px; */
+  /* font-size: 12px; */
+  font-size: 10px;
   margin-right: 20px;
-  margin-left: 15px;
+  /* margin-left: 15px; */
 }
 
 h1.tm {
@@ -107,15 +153,18 @@ h1.tm {
 } */
 
 img.profile-picture {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
+  /* width: 40px;
+  height: 40px; */
   border-radius: 50%;
   /* margin-left: 120px;
   margin-bottom: 10px; */
 }
 
 h3.profile-name {
-  font-size: 10px;
+  font-size: 8px;
+  /* font-size: 10px; */
   margin-left: 10px;
 }
 
