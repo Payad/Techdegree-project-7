@@ -1,9 +1,6 @@
 const user = document.getElementById("userField");
 const message = document.getElementById("messageField");
 const send = document.getElementById("send");
-// const save = document.getElementById("button #save");
-// const cancel = document.getElementById("button #cancel");
-// const hourlyButton = document.getElementById("hourly");
 
 
 const notification1 = document.getElementById('alertBox1');
@@ -16,75 +13,13 @@ notification1.innerHTML = `<div class="alertBox1">
 </div>`
 
 const clickEvent = document.getElementById('bell-icon');
-document.getElementById('alertBox1').style.visibility = 'hidden';
+document.getElementById('alertBox1').style.display = 'none';
 clickEvent.addEventListener('click', displayAlertBox1);
    
 
  function displayAlertBox1() {
-     notification1.style.visibility = 'visible';
+     notification1.style.display = 'block';
  }
-
-// const notification2 = document.getElementById('alertBox2');
-// notification2.innerHTML = `<div class="alertBox2">
-// <div class="notif2">
-// <p class="alertP><strong>Alert:</strong> You have <strong>2</strong> new comments</p>
-// <p class="alertBox2-close">&times;</p>
-// </div>
-// </div>`
-
-// const clickEvent2 = document.getElementById('bell-icon');
-// document.getElementById('alertBox2').style.visibility = 'hidden';
-// clickEvent2.addEventListener('click', displayAlertBox2);
-
-// function displayAlertBox2() {
-//     notification2.style.visibility = 'visible';
-// }
-
-
-// const clickEvent = document.getElementById('bell-icon');
-// document.getElementById('alertBox2').style.visibility = 'hidden';
-
-// clickEvent.addEventListener('click', displayAlertBox2());
-
-// function displayAlertBox2() {
-//     notification2.style.visibility = 'visible';
-// }
-// clickEvent.addEventListener('click', (e) => {
-//     const element = e.target;
-//     if (element.classList.contains('alertBox1')) {
-//         notification1.style.visibility = 'visible';
-//     }
-
-// bell-icon.addEventListener('click', () => {
-//     notification2.style.visibility = 'visible';
-// });
-
-// notification2.addEventListener('click', (e) => {
-//    const element = e.target;
-//     if (element.classList.contains('alertBox2-close')) {
-//     notification2.style.display = 'none';
-//     }
-// });
-
-
-// bell-icon.addEventListener('click', () => {
-
-//     if (button === "BELL-ICON") {
-//      notification1.style.visibility = 'visible'
-//     } else {
-//      notification.style.display = 'none'
-//     }
-// });
-
-// notification1.addEventListener('click', );
-
-
-// const notification2 = document.getElementById('alertBox2');
-// notification2.innerHTML = `<div class="alertBox2">
-// <p><strong>Notification:</strong You have 2 new comments</p>
-// <p class="alertBox2-close">&times;</p>
-// </div>`
-
 
 const alertBanner = document.getElementById("alert");
 alertBanner.innerHTML = 
@@ -100,18 +35,6 @@ alertBanner.innerHTML =
          alertBanner.style.display = "none"
      }
  });
-
-//  default line graph
-
-//  const defaultConfig = {
-//      type: 'line',
-//      data: hourlyData,
-//      options: trafficOptions,
-
-//  }
-
-//  const defaultconfig = document.getElementById('traffic-chart');
-//  chart = new Chart(defaultconfig, defaultConfig);
 
 // line graph for traffic chart
 
@@ -216,319 +139,7 @@ document.getElementById('monthly').addEventListener('click', () => {
 });
 
 
-//   const hourlyTraffic = document.getElementById("traffic-chart");
-
-//  let hourlyData = {
-//      labels:  ["15-28", "12-4", "2-20", "16-7", "18-5", "20-10", "30-15", "17-8", "11-3", "24-13", "21-13"],
-//     //  ["16-22", "23-29", "30-5", "6-12", "13-19", "20-26", "27-3", 
-//     //  "4-10", "11-17", "18-24", "25-31"],
-//      datasets: [{
-//          data: [750, 1250, 1000, 2000, 1500, 1750, 1250, 1850, 2250, 1500,
-//         2500],
-//             backgroundColor: 'rgba(116, 119, 191, .3)',
-//             borderWidth: 1,
-//      }]
-        
-//  };
-
-//  let hourlyOptions = {
-//      aspectRatio: 2.5,
-//      animation: {
-//          duration: 0
-//      },
-//      scales: {
-//          yAxes: [{
-//              ticks: {
-//                  beginAtZero:true
-//              }
-//          }]
-//      },
-//      legend : {
-//          display: false
-//      }
-//  };
-//   let hourlyChart = new Chart(hourlyTraffic, {
-//       type: 'line',
-//       data: hourlyData,
-//       optiopns: hourlyOptions
-//   });
-
-//    document.getElementsByClassName('traffic-nav-button').addEventListener('click', (e) => {
-//         hourlyButton = e.target;
-//         if (hourlyButton === 'HOURLY') {
-//             chart.config.data = {
-//             type: 'line',    
-//             labels:  ["15-28", "12-4", "2-20", "16-7", "18-5", "20-10", "30-15", "17-8", "11-3", "24-13", "21-13"],
-//             // //   ["16-22", "23-29", "30-5", "6-12", "13-19", "20-26", "27-3", 
-//             // //   "4-10", "11-17", "18-24", "25-31"],
-//      datasets: [{
-//          data: [750, 1250, 1000, 2000, 1500, 1750, 1250, 1850, 2250, 1500,
-//         2500],
-//             backgroundColor: 'rgba(116, 119, 191, .3)',
-//             borderWidth: 1,
-//      }]
-//     }
-//     chart.update();
-//         };
-//   });
-
-
-
-
-
-
-
-
-  //hourly button chart
-
-//   const hourlyData = document.getElementById("traffic-chart");
-//   chart = new Chart(hourlyData, {
-//       type:'line',
-    //   labels: ["15-28", "12-4", "2-20", "16-7", "18-5", "20-10", "30-15", "17-8", "11-3", "24-13", "21-13"],
-    // //   ["16-22", "23-29", "30-5", "6-12", "13-19", "20-26", "27-3", 
-    // //   "4-10", "11-17", "18-24", "25-31"],
-//       datasets: [{
-//         data: [750, 1250, 1000, 2000, 1500, 1750, 1250, 1850, 2250, 1500,
-//        2500],
-//            backgroundColor: 'rgba(116, 119, 191, .3)',
-//            borderWidth: 1,
-//       }],
-// });
-
-//     document.getElementByClassName('traffic-nav-button').addEventListener('click', () => {
-//     chart.config.data = {
-//       type: 'line',
-//       labels: ["15-28", "12-4", "2-20", "16-7", "18-5", "20-10", "30-15", "17-8", "11-3", "24-13", "21-13"],
-//     //   ["16-22", "23-29", "30-5", "6-12", "13-19", "20-26", "27-3", 
-//     //   "4-10", "11-17", "18-24", "25-31"],
-//       datasets: [{
-//         data: [750, 1250, 1000, 2000, 1500, 1750, 1250, 1850, 2250, 1500,
-//             2500],
-        
-//            backgroundColor: 'rgba(116, 119, 191, .3)',
-//            borderWidth: 1,
-//       }],
-//         }
-//         chart.update();
-//     });
-
-
-
-
-
-
-
-    // const dailyLineData = document.getElementById('traffic-chart');
-    // chart = new Chart(dailyLineData, {
-    //     type:'line',
-    //     labels: ["15-28", "12-4", "2-20", "16-7", "18-5", "20-10", "30-15", "17-8", "11-3", "24-13", "21-13"],
-    //   //   ["16-22", "23-29", "30-5", "6-12", "13-19", "20-26", "27-3", 
-    //   //   "4-10", "11-17", "18-24", "25-31"],
-    //     datasets: [{
-    //       data: [750, 1250, 1000, 2000, 1500, 1750, 1250, 1850, 2250, 1500,
-    //      2500],
-    //          backgroundColor: 'rgba(116, 119, 191, .3)',
-    //          borderWidth: 1,
-    //       }],
-  
-    //   });
-    //   document.querySelector('ul#traffic-nav-button').addEventListener('click', (e) => {
-    //       button = e.target;
-    //       if (button === 'DAILY') {
-    //           chart.config.data = {
-    //                 type: 'line',
-    //               labels: ["15-28", "12-4", "2-20", "16-7", "18-5", "20-10", "30-15", "17-8", "11-3", "24-13", "21-13"], 
-    //               datasets: [{
-    //                 data: [750, 1250, 1000, 2000, 1500, 1750, 1250, 1850, 2250, 1500,
-    //                2500],
-    //                    backgroundColor: 'rgba(116, 119, 191, .3)',
-    //                    borderWidth: 1,
-    //                 }],
-
-    //           }
-    //       }
-    //       chart.update();
-    //   });
-
-        
-    
-
-
-
-//   const hourlyData = document.getElementById("traffic-chart");
-//   chart = new Chart(hourlyData, {
-//       type:'line',
-//       labels: ["15-28", "12-4", "2-20", "16-7", "18-5", "20-10", "30-15", "17-8", "11-3", "24-13", "21-13"],
-//     //   ["16-22", "23-29", "30-5", "6-12", "13-19", "20-26", "27-3", 
-//     //   "4-10", "11-17", "18-24", "25-31"],
-//       datasets: [{
-//         data: [750, 1250, 1000, 2000, 1500, 1750, 1250, 1850, 2250, 1500,
-//        2500],
-//            backgroundColor: 'rgba(116, 119, 191, .3)',
-//            borderWidth: 1,
-//       }],
-// });
-
-//     document.getElementById('hourly').addEventListener('click', () => {
-//     chart.config.data = {
-//       type: 'line',
-//       labels: ["15-28", "12-4", "2-20", "16-7", "18-5", "20-10", "30-15", "17-8", "11-3", "24-13", "21-13"],
-//     //   ["16-22", "23-29", "30-5", "6-12", "13-19", "20-26", "27-3", 
-//     //   "4-10", "11-17", "18-24", "25-31"],
-//       datasets: [{
-//         data: [750, 1250, 1000, 2000, 1500, 1750, 1250, 1850, 2250, 1500,
-//             2500],
-        
-//            backgroundColor: 'rgba(116, 119, 191, .3)',
-//            borderWidth: 1,
-//       }],
-//         }
-//         chart.update();
-//     });
-
-    // daily button chart
-
-    // const dailyLineData = document.getElementById('traffic-chart');
-    // chart = new Chart(dailyLineData, {
-    //     type: 'line',
-    //     labels: ["32-40", "41-45", "46-57", "58-62", "63-70", "71-75", "76-80", 
-    // "81-95", "96-100", "105-120", "121-132"],
-    // datasets: [{
-    //     data:  [750, 1250, 1000, 1200, 1350, 1750, 1250, 500, 2250, 1500,
-    //         2800],
-    // //     [750, 1250, 1000, 2000, 1500, 1750, 1250, 1850, 2250, 1500,
-    // //    2500],
-    //        backgroundColor: 'rgba(116, 119, 191, .3)',
-    //        borderWidth: 1,
-    //     }],
-    // });
-
-    // document.getElementById('daily').addEventListener('click', () => {
-    //     chart.config.data = {
-    //         type: 'line',
-    //         labels: ["32-40", "41-45", "46-57", "58-62", "63-70", "71-75", "76-80", 
-    //     "81-95", "96-100", "105-120", "121-132"],
-    //     datasets: [{
-    //         data: [750, 1250, 1000, 2000, 1500, 1750, 1250, 1850, 2250, 1500,
-    //        2500],
-    //            backgroundColor: 'rgba(116, 119, 191, .3)',
-    //            borderWidth: 1,
-    //         }],
-    //     }
-    //     chart.update();
-    // });
-
-    // weekly button chart
-
-    // const weeklyData = document.getElementById('traffic-chart');
-    // chart = new Chart(weeklyData, {
-    //     type: 'line',
-    //     labels: ["4-12", "13-17", "18-24", "25-32", "33-43", "44-51", "52-67", 
-    // "68-73", "74-81", "82-96", "97-105"],
-    // datasets: [{
-    //     data: [750, 1250, 1000, 2000, 1500, 1750, 1250, 1850, 2250, 1500,
-    //    2500],
-    //        backgroundColor: 'rgba(116, 119, 191, .3)',
-    //        borderWidth: 1,
-    //     }]
-    // });
-
-    // document.getElementById('weekly').addEventListener('click', () => {
-    //     chart.config.data = {
-    //         type: 'line',
-    //         labels: ["4-12", "13-17", "18-24", "25-32", "33-43", "44-51", "52-67", 
-    // "68-73", "74-81", "82-96", "97-105"],
-    // datasets: [{
-    //     data: [750, 1250, 1000, 2000, 1500, 1750, 1250, 1850, 2250, 1500,
-    //    2500],
-    //        backgroundColor: 'rgba(116, 119, 191, .3)',
-    //        borderWidth: 1,
-    //     }]
-    //     }
-    //     chart.update();
-    // });
-
-    // monthly data chart
-
-    //  const monthlyData = document.getElementById('traffic-chart');
-    //  chart = new Chart(monthlyData, {
-    //     type: 'line',
-    //     labels: ["3-16", "5-15", "6-24", "7-18", "8-20", "9-17", "10-22", 
-    //     "11-22", "12-14", "13-26", "14-27"],
-    //     datasets: [{
-    //         data: [750, 1250, 1000, 2000, 1500, 1750, 1250, 1850, 2250, 1500,
-    //        2500],
-    //            backgroundColor: 'rgba(116, 119, 191, .3)',
-    //            borderWidth: 1,
-    //     }]
-    // });
-
-    // document.getElementById('monthly').addEventListener('click', () => {
-    //     chart.config.data = {
-    //     type: 'line',
-    //     labels: ["3-16", "5-15", "6-24", "7-18", "8-20", "9-17", "10-22", 
-    // "11-22", "12-14", "13-26", "14-27"],
-    // datasets: [{
-    //     data: [750, 1250, 1000, 2000, 1500, 1750, 1250, 1850, 2250, 1500,
-    //    2500],
-    //        backgroundColor: 'rgba(116, 119, 191, .3)',
-    //        borderWidth: 1,
-    // }]
-    //  }
-    //  chart.update();
-    // });
-
-       
-//   const dailyData = document.getElementsByClassName("traffic-nav-link");
-//   let dailyData = {
-//     labels: ["32-40", "41-45", "46-57", "58-62", "63-70", "71-75", "76-80", 
-//     "81-95", "96-100", "105-120", "121-132"],
-//     datasets: [{
-//         data: [750, 1250, 1000, 2000, 1500, 1750, 1250, 1850, 2250, 1500,
-//        2500],
-//            backgroundColor: 'rgba(116, 119, 191, .3)',
-//            borderWidth: 1,
-//         }]
-//   };
-//     let trafficnavlink = new Chart(dailyData, {
-//         type: 'line',
-//         data: dailyData,
-//         options: dailyOptions
-//     });
-
-//   const weeklyData = document.getElementsByClassName("traffic-nav-link");
-//   let weeklyData = {
-    // labels: ["4-12", "13-17", "18-24", "25-32", "33-43", "44-51", "52-67", 
-    // "68-73", "74-81", "82-96", "97-105"],
-    // datasets: [{
-    //     data: [750, 1250, 1000, 2000, 1500, 1750, 1250, 1850, 2250, 1500,
-    //    2500],
-    //        backgroundColor: 'rgba(116, 119, 191, .3)',
-    //        borderWidth: 1,
-    //     }]
-//   };
-//     let trafficnavlink = new Chart(weeklyData, {
-//         type: 'line',
-//         data: weeklyData,
-//         options: weeklyOptions
-//     });
-
-//   const monthlyData = document.getElementsByClassName("traffic-nav-link");
-//   let monthlyData = {
-    // labels: ["3-16", "5-15", "6-24", "7-18", "8-20", "9-17", "10-22", 
-    // "11-22", "12-14", "13-26", "14-27"],
-    // datasets: [{
-    //     data: [750, 1250, 1000, 2000, 1500, 1750, 1250, 1850, 2250, 1500,
-    //    2500],
-    //        backgroundColor: 'rgba(116, 119, 191, .3)',
-    //        borderWidth: 1,
-    // }]
-//   };
-//   let trafficnavlink = new Chart(monthlyData, {
-//       type: 'line',
-//       data: monthlyData,
-//       options: monthlyOptions
-//   });
+// pie and bar charts
 
   const dailyCanvas = document.getElementById("daily-chart");
 
@@ -592,38 +203,6 @@ document.getElementById('monthly').addEventListener('click', () => {
       options: mobileOptions
   });
 
-  //nav link buttons event handler
-
-//   const trafficNavLink = document.querySelectorAll('#traffic-nav-link');
-//   document.getElementsByClassName('traffic-nav-link').addEventListener('click', () => {
-//       if (button === hourly) {
-//           chart.data = hourlyData;
-//           chart.options = { 
-//             hourlyOptions 
-//         };
-//           chart.update();  
-//       } else if (button === daily) {
-//             chart.data = dailyLineData;
-//             chart.options = {
-//                 dailyOptions
-//             };
-//              chart.update();
-//       } else if (button === weekly) {
-//             chart.data = weeklyData;
-//             chart.options = {
-//                 weeklyOptions
-//             };
-//       } else if (button === monthly) {
-//             chart.data = monthlyData;
-//             chart.options = {
-//                 monthlyOptions
-//             };
-//              chart.update();
-//       }
-
-//   });
-
-
   // Send Button
   send.addEventListener('click', (e) => {
       e.preventDefault();
@@ -645,33 +224,20 @@ let timezone = document.getElementById('timezone');
 let save = document.getElementById('save');
 let settings = document.getElementById('settings');
 
-// save.addEventListener('click', () => {
-// if (button === 'SAVE') {
-// localStorage.setItem('settings', JSON.stringify(settings));
-// }
-// });
-
 
 function saveResponses() {
-    localStorage.setItem('on', toggleField.value);
+    localStorage.setItem('on1', toggleField.checked);
+    localStorage.getItem('on1', toggleField.checked);
+    localStorage.setItem('on2', toggleField.checked);
+    localStorage.getItem('on2', toggleField.checked);
     localStorage.setItem('timezone', timezone.value);
+    localStorage.getItem('timezone', timezone.value);
 }
 save.addEventListener('click', saveResponses);
-
-// function save() {
-//     saveLocalStorage = document.getElementById("settings");
-//     localStroage.setItem("settings", saveLocalStorage.value);
-// }
-
-// const saveLocalStorage = document.getElementById("settings")
-//   saveLocalStorage.addEventListener('click', () => {
-//     localStorage.setItem("settings", saveLocalStorage.value)
-//   });
 
 // Cancel Button
 
     toggleField = document.getElementById('off');
-    // toggleField = document.getElementById('on');
     timeZone = document.getElementById('timezone');
     let cancel = document.getElementById('cancel');
     settings = document.getElementById('settings');
@@ -684,7 +250,8 @@ save.addEventListener('click', saveResponses);
 
     function cancelResponses() {
         // clear();
-        localStorage.removeItem('on');
+        localStorage.removeItem('on1');
+        localStorage.removeItem('on2');
         // localStorage.removeItem('off');
         localStorage.removeItem('timezone');
     }
