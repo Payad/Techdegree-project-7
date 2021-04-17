@@ -71,15 +71,16 @@ alertBanner.innerHTML =
   let trafficChart = new Chart(trafficCanvas, {
       type: 'line',
       data: trafficData,
-      optiopns: trafficOptions
+      options: trafficOptions
   });
 
 
   const hourlyData = {
     labels:  ["15-28", "12-4", "2-20", "16-7", "18-5", "20-10", "30-15", "17-8", "11-3", "24-13", "21-13"],
      datasets: [{
-         data: [750, 1250, 1000, 2000, 1500, 1750, 1250, 1850, 2250, 1500,
-        2500],
+         data: [325, 1050, 1250, 2500, 1250, 1850, 1625, 1025, 750, 1400, 2200],
+        //  [750, 1250, 1000, 2000, 1500, 1750, 1250, 1850, 2250, 1500,
+        // 2500],
             backgroundColor: 'rgba(116, 119, 191, .3)',
             borderWidth: 1,
      }],
@@ -94,8 +95,9 @@ alertBanner.innerHTML =
   labels: ["32-40", "41-45", "46-57", "58-62", "63-70", "71-75", "76-80", 
         "81-95", "96-100", "105-120", "121-132"],
   datasets: [{
-    data: [750, 1250, 1000, 2000, 1500, 1750, 1250, 1850, 2250, 1500,
-   2500],
+    data: [450, 700, 525, 850, 1000, 1250, 1550, 1100, 1300, 1700, 1450],
+//     [750, 1250, 1000, 2000, 1500, 1750, 1250, 1850, 2250, 1500,
+//    2500],
        backgroundColor: 'rgba(116, 119, 191, .3)',
        borderWidth: 1,
     }],
@@ -110,8 +112,9 @@ const weeklyData = {
     labels: ["4-12", "13-17", "18-24", "25-32", "33-43", "44-51", "52-67", 
     "68-73", "74-81", "82-96", "97-105"],
     datasets: [{
-     data: [750, 1250, 1000, 2000, 1500, 1750, 1250, 1850, 2250, 1500,
-    2500],
+     data: [200, 400, 550, 725, 450, 900, 1200, 950, 1600, 1050, 1150],
+    //  [750, 1250, 1000, 2000, 1500, 1750, 1250, 1850, 2250, 1500,
+    // 2500],
         backgroundColor: 'rgba(116, 119, 191, .3)',
         borderWidth: 1,
      }],
@@ -126,8 +129,9 @@ const monthlyData = {
     labels: ["3-16", "5-15", "6-24", "7-18", "8-20", "9-17", "10-22", 
         "11-22", "12-14", "13-26", "14-27"],
         datasets: [{
-            data: [750, 1250, 1000, 2000, 1500, 1750, 1250, 1850, 2250, 1500,
-           2500],
+            data: [300, 550, 825, 625, 1200, 1500, 1225, 1450, 1100, 1600, 1350],
+        //     [750, 1250, 1000, 2000, 1500, 1750, 1250, 1850, 2250, 1500,
+        //    2500],
                backgroundColor: 'rgba(116, 119, 191, .3)',
                borderWidth: 1,
         }],
@@ -219,21 +223,34 @@ document.getElementById('monthly').addEventListener('click', () => {
 
 // Save button localStorage
 
-let toggleField = document.getElementById('on');
+// let toggleField = document.getElementById('on1');
+let toggleField2 = document.getElementById('on2');
 let timezone = document.getElementById('timezone');
 let save = document.getElementById('save');
 let settings = document.getElementById('settings');
 
+function check() {
+    const checkbox = document.getElementById('on1');
+    localStorage.setItem('on1', checkbox.checked);
+}
+
+const checked = localStorage.getItem('on1');
+document.getElementById('on1').checked = true;
+
 
 function saveResponses() {
     localStorage.setItem('on1', toggleField.checked);
-    localStorage.getItem('on1', toggleField.checked);
-    localStorage.setItem('on2', toggleField.checked);
-    localStorage.getItem('on2', toggleField.checked);
+    localStorage.getItem('on1', toggleField.value);
+    localStorage.setItem('on2', toggleField2.checked);
+    localStorage.getItem('on2', toggleField2.checked);
     localStorage.setItem('timezone', timezone.value);
     localStorage.getItem('timezone', timezone.value);
 }
+
+
 save.addEventListener('click', saveResponses);
+// save.addEventListener('click', check);
+
 
 // Cancel Button
 
