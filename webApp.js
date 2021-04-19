@@ -8,9 +8,18 @@ notification1.innerHTML = `<div class="alertBox1">
 <div class="notif1">
 <p><strong>Alert:</strong> You have <strong>1</strong> new update</p>
 <p><strong>Alert:</strong> You have <strong>2</strong> new comments</p>
+<div class="x-container">
 <p class="alertBox1-close">&times;</p>
 </div>
+</div>
 </div>`
+
+notification1.addEventListener('click', (e) => {
+    const element = e.target;
+    if (element.classList.contains("alertBox1-close")) {
+        notification1.style.display = "none"
+    }
+});
 
 const clickEvent = document.getElementById('bell-icon');
 document.getElementById('alertBox1').style.display = 'none';
@@ -224,40 +233,66 @@ document.getElementById('monthly').addEventListener('click', () => {
 // Save button localStorage
 
 // let toggleField = document.getElementById('on1');
-let toggleField2 = document.getElementById('on2');
+// let toggleField2 = document.getElementById('on2');
 let timezone = document.getElementById('timezone');
 let save = document.getElementById('save');
 let settings = document.getElementById('settings');
+// const checkBox1 = document.querySelectorAll('input[type=checkbox]');
+const checkBox1 = document.getElementById('checkbox1');
+const checkBox2 = document.getElementById('checkbox2');
 
-function check() {
-    const checkbox = document.getElementById('on1');
-    localStorage.setItem('on1', checkbox.checked);
-}
+save.addEventListener('click', () => {
+    // document.getElementById('checkbox1').checked == false;
 
-const checked = localStorage.getItem('on1');
-document.getElementById('on1').checked = true;
+    if (checkBox1.checked == true) {
+    // if (document.getElementById('checkbox1').checked == true) {
+        localStorage.setItem('checkbox1', checkBox1.checked);
+        localStorage.getItem('checkbox1');
+
+    }
+});
+
+// function check() {
+//     const checkbox = document.getElementById('on1');
+//     localStorage.setItem('on1', checkbox.checked);
+// }
+
+// const checked = localStorage.getItem('on1');
+// document.getElementById('on1').checked = true;
 
 
-function saveResponses() {
-    localStorage.setItem('on1', toggleField.checked);
-    localStorage.getItem('on1', toggleField.value);
-    localStorage.setItem('on2', toggleField2.checked);
-    localStorage.getItem('on2', toggleField2.checked);
-    localStorage.setItem('timezone', timezone.value);
-    localStorage.getItem('timezone', timezone.value);
-}
+// function saveResponses() {
+//     if (timezone.value) {
+//     localStorage.setItem('timezone', timezone.value)
+//     localStorage.setItem('checkBox1', checkBox1.checked);
+//     localStorage.getItem(checkBox1);
+    // localStorage.setItem('on1', toggleField.checked);
+    // localStorage.getItem('on1', toggleField.value);
+    // localStorage.setItem('on2', toggleField2.checked);
+    // localStorage.getItem('on2', toggleField2.value);
+    // localStorage.setItem('timezone', timezone.value);
+    // localStorage.getItem('timezone', timezone.value);
+// }
+// }
 
 
-save.addEventListener('click', saveResponses);
+// save.addEventListener('click', function() {
+// if (timezone.value) {
+//     localStorage.setItem('timezone', timezone.value);
+//     localStorage.getItem(timezone);
+//     localStorage.setItem('checkBox1', checkBox1.checked);
+//     localStorage.getItem(checkBox1);
+// }
+// });
 // save.addEventListener('click', check);
 
 
 // Cancel Button
 
-    toggleField = document.getElementById('off');
-    timeZone = document.getElementById('timezone');
-    let cancel = document.getElementById('cancel');
-    settings = document.getElementById('settings');
+    // toggleField = document.getElementById('off');
+    // timeZone = document.getElementById('timezone');
+    // let cancel = document.getElementById('cancel');
+    // settings = document.getElementById('settings');
 
 //     cancel.addEventListener('click', () => {
 //         if (button === 'CANCEL') {
@@ -265,14 +300,14 @@ save.addEventListener('click', saveResponses);
 //         }
 // });
 
-    function cancelResponses() {
-        // clear();
-        localStorage.removeItem('on1');
-        localStorage.removeItem('on2');
-        // localStorage.removeItem('off');
-        localStorage.removeItem('timezone');
-    }
-    cancel.addEventListener('click', cancelResponses);
+    // function cancelResponses() {
+    //     // clear();
+    //     localStorage.removeItem('on1');
+    //     localStorage.removeItem('on2');
+    //     // localStorage.removeItem('off');
+    //     localStorage.removeItem('timezone');
+    // }
+    // cancel.addEventListener('click', cancelResponses);
 
   
 
