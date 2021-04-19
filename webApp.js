@@ -244,13 +244,32 @@ const checkBox2 = document.getElementById('checkbox2');
 save.addEventListener('click', () => {
     // document.getElementById('checkbox1').checked == false;
 
-    if (checkBox1.checked == true) {
+    // if (checkBox1.checked == true) {
     // if (document.getElementById('checkbox1').checked == true) {
-        localStorage.setItem('checkbox1', checkBox1.checked);
-        localStorage.getItem('checkbox1');
-
-    }
+        localStorage.setItem("checkbox1", "checked");
+        localStorage.getItem("checkbox1");
+        // localStorage.getItem('checkbox1');
+    // } else {
+        localStorage.setItem("checkbox1", "unchecked");
+        localStorage.getItem("checkbox1");
+    // }
 });
+
+// function isChecked() {
+//     document.getElementById('checkbox1').checked = true;
+// }
+
+// function unChecked() {
+//     document.getElementById('checkbox1').checked = false;
+// }
+
+// window.onload = function() {
+//     isChecked();
+// };
+
+// window.onload = function() {
+//     unChecked();
+// };
 
 // function check() {
 //     const checkbox = document.getElementById('on1');

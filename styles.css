@@ -314,6 +314,15 @@ hr.social-stats {
   font-size: 30px;
 }
 
+.twitter {
+  height: 45px;
+  width: 45px;
+}
+
+.twitter-path {
+  margin-left: 10px;
+}
+
 p.Ttag {
   font-size: 15px;
 }
@@ -342,6 +351,11 @@ p.Ttag {
   font-size: 30px;
 }
 
+.facebook {
+  height: 40px;
+  width: 40px;
+}
+
 p.Ftag {
   font-size: 15px;
 }
@@ -368,6 +382,11 @@ p.Ftag {
 
 .google-text {
   font-size: 30px;
+}
+
+.google {
+  height: 40px;
+  width: 40px;
 }
 
 p.Gtag {
