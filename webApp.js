@@ -259,6 +259,13 @@ save.addEventListener('click', () => {
     // }
 });
 
+// Cancel button
+
+cancel.addEventListener('click', () => {
+    localStorage.clear();
+
+});
+
 // this is what I think Amber means by using a function to get the checkbox item on page load
 function isChecked() {
     checkBox1.checked = JSON.parse(localStorage.getItem('checkbox1'));
