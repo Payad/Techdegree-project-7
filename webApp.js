@@ -246,26 +246,38 @@ save.addEventListener('click', () => {
 
     // if (checkBox1.checked == true) {
     // if (document.getElementById('checkbox1').checked == true) {
-        localStorage.setItem("checkbox1", "checked");
-        localStorage.getItem("checkbox1");
+        localStorage.setItem("checkbox1", checkBox1.checked);
+        // localStorage.getItem("checkbox1", checkbox1.value);
         // localStorage.getItem('checkbox1');
     // } else {
-        localStorage.setItem("checkbox1", "unchecked");
-        localStorage.getItem("checkbox1");
+        // localStorage.setItem("checkbox1", "unchecked");
+        // localStorage.getItem("checkbox1", checkbox1.value);
+        localStorage.setItem("checkbox2", checkBox2.checked);
+        // localStorage.setItem("checkbox2", "unchecked");
+        localStorage.setItem('timezone', timezone.selectedIndex);
+        // localStorage.getItem('timezone');
     // }
 });
 
-// function isChecked() {
-//     document.getElementById('checkbox1').checked = true;
-// }
+// this is what I think Amber means by using a function to get the checkbox item on page load
+function isChecked() {
+    checkBox1 = document.getElementById('checkbox1');
+    if (document.getElementById('checkbox1').checked == false) {
+    // if (checkBox1 !== localStorage.setItem('checkbox1', checkBox1.value)) {
+    localStorage.getItem('checkbox1');
+    // document.getElementById('checkbox1').checked = true;
+    }
+}
+
 
 // function unChecked() {
 //     document.getElementById('checkbox1').checked = false;
 // }
 
-// window.onload = function() {
-//     isChecked();
-// };
+window.onload = isChecked;
+    
+
+   
 
 // window.onload = function() {
 //     unChecked();
