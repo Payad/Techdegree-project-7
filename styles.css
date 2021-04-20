@@ -679,7 +679,7 @@ main {
   grid-area: main;
 }
 
- /* Media query 768px */ /* Media query 768px */ /* Media query 768px */
+ /* Media query 768px */ /* Media query 768px */ /* Media query 768px */ /* Media query 768px */ /* Media query 768px */ /* Media query 768px */
 
 @media (min-width: 768px) {
   header {
@@ -694,6 +694,16 @@ main {
   main {
     grid-area: main;
   }
+
+  /* @media (min-width: 768px) { */
+    .widget-container-full {
+      width: 90vw;
+    }
+    .widget-container-half {
+      width: 45vw;
+      margin-right: 10px;
+    }
+/* } */
 
 .grid-container {
   height: 100%;
@@ -1057,7 +1067,7 @@ hr.between-charts {
   display: grid;
 }
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) { */
   .main {
     grid-template-columns: 1fr;
     margin-top: 1px;
@@ -1073,15 +1083,15 @@ hr.between-charts {
   .mobile, .recent-activities, .settings {
     grid-column: 2 / span 1;
   }
-}
+/* } */
 
 
-.widget-container-full, .widget-container-half {
+/* .widget-container-full, .widget-container-half {
     width: 95vw;
     margin-left: 5px;
-}
+} */
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
     .widget-container-full {
       width: 90vw;
     }
@@ -1089,9 +1099,9 @@ hr.between-charts {
       width: 45vw;
       margin-right: 10px;
     }
-}
+} */
 
-/* Media query 1024px */ /* Media query 1024px */ /* Media query 1024px */
+/* Media query 1024px */ /* Media query 1024px */ /* Media query 1024px */ /* Media query 1024px */ /* Media query 1024px */ /* Media query 1024px */
 
 .main {
   display: grid;
@@ -1120,10 +1130,10 @@ hr.between-charts {
   .mobile, .recent-activities, .settings {
     grid-column: 2 / span 1;
   }
-}
+/* } */
 
 
-@media (min-width: 1024px) {
+/* @media (min-width: 1024px) { */
   header {
     grid-area: header;
     /* height: 105px; */

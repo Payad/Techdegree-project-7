@@ -261,12 +261,15 @@ save.addEventListener('click', () => {
 
 // this is what I think Amber means by using a function to get the checkbox item on page load
 function isChecked() {
-    checkBox1 = document.getElementById('checkbox1');
-    if (document.getElementById('checkbox1').checked == false) {
+    checkBox1.checked = JSON.parse(localStorage.getItem('checkbox1'));
+    checkBox2.checked = JSON.parse(localStorage.getItem('checkbox2'));
+    timezone.selectedIndex = localStorage.getItem('timezone');
+    // document.getElementById('checkbox1');
+    // if (document.getElementById('checkbox1').checked = true) {
     // if (checkBox1 !== localStorage.setItem('checkbox1', checkBox1.value)) {
-    localStorage.getItem('checkbox1');
+    // localStorage.getItem('checkbox1');
     // document.getElementById('checkbox1').checked = true;
-    }
+//     }
 }
 
 
