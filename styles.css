@@ -263,6 +263,7 @@ ul.traffic-nav-button {
   margin-left: 20px;
   margin-bottom: 10px;
   list-style-type: none;
+  display: inline-flex;
 }
 
 li.traffic-nav-link {
@@ -1125,10 +1126,14 @@ hr.between-charts {
   }
   .daily, .members, .message {
     grid-column: 1 / span 1;
-    margin-top: 3px;
+    /* margin-top: 3px; */
   }
   .mobile, .recent-activities, .settings {
     grid-column: 2 / span 1;
+  }
+
+  .members, .message {
+    margin-top: 3px;
   }
 /* } */
 
@@ -1212,6 +1217,12 @@ hr.between-charts {
 
   ul.traffic-nav-button {
     margin-left: 640px;
+  }
+  /* .daily {
+    margin-bottom: 3px;
+  } */
+  button#daily {
+    margin-bottom: 3px;
   }
 
   .widget-half {
