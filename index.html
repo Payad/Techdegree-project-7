@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>My Dashboard</title>
         <meta charset="UTF-8">
@@ -170,7 +170,7 @@
     <!-- viewBox="-9 -10 45 45"  -->
     <div class="twitter-image">
     <!-- svg social img goes here -->
-    <?xml version="1.0" encoding="utf-8"?>
+    <!-- <?xml version="1.0" encoding="utf-8"?> -->
     <!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
     <svg class="twitter" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" 
     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-16 -15 70 70"
@@ -200,7 +200,7 @@
     <div class="facebook-image">
     <!-- svg facebook photo goes here -->
     <!-- <?xml version="1.0" ?> -->
-    <!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+    <!-- <!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'> -->
     <svg class="facebook" enable-background="new 0 0 56.693 56.693" height="56.693px" version="1.1" 
     viewBox="-4 -1 66.693 66.693" width="56.693px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" 
     xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -271,7 +271,7 @@
     <h3 class="h3">NEW MEMBERS</h3>
     <div class="widget-half-1024px">
     <div id="members1Id" class="members-1-container">
-        <img src="images/member-1.jpg" class="profile-image-1">
+        <img src="images/member-1.jpg" class="profile-image-1" alt="member1 profile image">
     <div class="members-text">
         <p class="memberName-1">Victoria Chambers</p>
         <a href="#">victoria.chambers80@example.com</a>
@@ -281,7 +281,7 @@
     <hr class="members">
 
     <div id="members2Id" class="members-2-container">
-        <img src="images/member-2.jpg" class="profile-image-2">
+        <img src="images/member-2.jpg" class="profile-image-2" alt="member2 profile image">
     <div class="members-text">
         <p class="memberName-2">Dale Byrd</p>
         <a class="email-2" href="#">dale.byrd52@example.com</a>
@@ -291,7 +291,7 @@
     <hr class="members">
 
     <div class="members-3-container">
-        <img src="images/member-3.jpg" class="profile-image-3">
+        <img src="images/member-3.jpg" class="profile-image-3" alt="member3 profile image">
     <div class="members-text">
         <p class="memberName-3">Dawn Wood</p>
         <a class="email-3" href="#">dawn.wood16@example.com</a>
@@ -301,7 +301,7 @@
     <hr class="members">
 
     <div class="members-4-container">
-        <img src="images/member-4.jpg" class="profile-image-4">
+        <img src="images/member-4.jpg" class="profile-image-4" alt="member4 profile image">
     <div class="members-text">
         <p class="memberName-4">Dan Oliver</p>
         <a class="email-4" href="#">dan.oliver82@example.com</a>
@@ -316,7 +316,7 @@
     <h3 id="recent-title" class="h3">RECENT ACTIVITY</h3>
     <div class="widget-half-1024px">
     <div id="recents1Id" class="members-1-container">
-        <img src="images/member-1.jpg" class="profile-image-1">
+        <img src="images/member-1.jpg" class="profile-image-1" alt="member1 recent profile image">
     <div class="members-1-comments">
         <div class="comment-arrow-1">
         <p class="comments-1">Victoria Chambers commented on your <strong>WebApp's SEO tips</strong></p>
@@ -327,8 +327,8 @@
     </div>
     <hr class="recent-activity">
 
-    <div class="members-2-container" id="members2Id">
-        <img src="images/member-2.jpg" class="profile-image-2">
+    <div class="members-2-container">
+        <img src="images/member-2.jpg" class="profile-image-2" alt="member2 recent profile image">
     <div class="members-2-comments">
         <div class="comment-arrow-2">
         <p class="comments-2">Dale Byrd like the post <strong>Facebook's Changes for 2021</strong></p>
@@ -340,7 +340,7 @@
     <hr class="recent-activity">    
 
     <div class="members-3-container" id="members3Id">
-        <img src="images/member-3.jpg" class="profile-image-3">
+        <img src="images/member-3.jpg" class="profile-image-3" alt="member3 recent profile image">
     <div class="members-3-comments">
         <div class="comment-arrow-3">
         <p class="comments-3">Dawn Wood commented on <strong>Facebook's Changes for 2021</strong></p>
@@ -352,7 +352,7 @@
     <hr class="recent-activity">
 
     <div class="members-4-container" id="members4Id">
-        <img src="images/member-4.jpg" class="profile-image-4">
+        <img src="images/member-4.jpg" class="profile-image-4" alt="member4 recent profile image">
     <div class="members-4-comments">
         <div class="comment-arrow-4">
         <p class="comments-4">Dan Oliver posted <strong>WebApp's SEO tips</strong></p>
@@ -431,10 +431,10 @@
     <div class="toggle-switch-1">
         <p class="notification-1">Send Email Notifications</p>
     <!-- toggle switch goes here -->
-        <label type="button" class="switch-light switch-candy">
+        <label class="switch-light switch-candy" onclick="">
         <input id="checkbox1" type="checkbox">
             <span>
-                <span id="off">Off</span>
+                <span id="off1">Off</span>
                 <!-- <span id="on1">On</span> -->
                 <!-- <button onclick="check()" id="on1">On</button> -->
                 <span id="on1">On</span>
@@ -449,7 +449,7 @@
         <label class="switch-light switch-candy" onclick="">
         <input id="checkbox2" type="checkbox">
             <span>
-                <span id="off">Off</span>
+                <span id="off2">Off</span>
                 <span id="on2">On</span>
                 <a></a>
             </span>
@@ -503,7 +503,8 @@
         } </script> -->
         <!-- <script type="text/javascript">
         isChecked();</script> -->
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+        <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script> -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
         <script src="webApp.js"></script>
     </body>
 </html>
