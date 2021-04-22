@@ -614,7 +614,10 @@ p.notification-2 {
   padding-top: 10px;
 }
 
-label.switch-light.switch-candy {
+/* label.switch-light.switch-candy {
+  width: 28%;
+} */
+label.switch-light.switch-ios {
   width: 28%;
 }
 
@@ -660,7 +663,8 @@ button#cancel {
 .grid-container {
   height: 100%;
   display: grid;
-  grid-template-columns: 1fr;
+  /* grid-template-columns: 1fr; */
+  grid-template-columns: 103%;
   grid-template-rows: 60px 70px 1fr;
   grid-template-areas: 
     "header"
@@ -1029,9 +1033,13 @@ button#send {
   width: 95%;
   margin-left: 20px;
 }
-label.switch-light.switch-candy {
+/* label.switch-light.switch-candy {
+  width: 12%;
+} */
+label.switch-light.switch-ios {
   width: 12%;
 }
+
 select#timezone {
   width: 95%;
   margin-left: 20px;
@@ -1344,7 +1352,10 @@ hr#recentAct-hr {
     margin-top: 15px;
   }
 
-  label.switch-light.switch-candy {
+  /* label.switch-light.switch-candy {
+    width: 17%;
+  } */
+  label.switch-light.switch-ios {
     width: 17%;
   }
 
