@@ -1070,7 +1070,7 @@ hr.between-charts {
   margin-top: 0px;
   margin-left: 2px;
 }
-}
+/* } */
 
 .main {
   display: grid;
@@ -1092,7 +1092,7 @@ hr.between-charts {
   .mobile, .recent-activities, .settings {
     grid-column: 2 / span 1;
   }
-/* } */
+}
 
 
 /* .widget-container-full, .widget-container-half {
